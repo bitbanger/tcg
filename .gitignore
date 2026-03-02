@@ -19,3 +19,4 @@ data/
 *.7z
 
 _collection/.*backup*
+old_inputs/
