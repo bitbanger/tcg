@@ -14,3 +14,8 @@ scp-sets.json
 backup*
 new_scp_csvs/
 .*.swp
+
+data/
+*.7z
+
+_collection/.*backup*
