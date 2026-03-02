@@ -157,7 +157,11 @@ class Card:
 		os.makedirs(ll.dirname(path), exist_ok=True)
 
 		if not ll.fexists(path):
-			ll.write(path, ll.http(self.image_url, b=True))
+			resp = ll.http(self.image_url, b=True)
+			if len(resp) < 9001:
+				return '(no image)'
+
+			ll.write(path, resp)
 
 		return path
 

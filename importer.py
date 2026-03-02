@@ -3,6 +3,8 @@ import ll
 from model import Game, Set, Card
 
 def main():
+	added_card_rows = []
+
 	for fn in ll.arg('fns', nargs='+'):
 		lines = ll.lines(fn)
 		game = lines[0]
@@ -20,20 +22,30 @@ def main():
 				var = ' '.join(spl[1:])
 
 			cards = s.card(num, limit=None)
+			cards_and_vars = ll.flatten([[(card, _var) for _var in card.variants] for card in cards])
+			cards_and_vars = [(c, v) for c, v in cards_and_vars if ((not var) or (v.lower().strip()==var.lower().strip()))]
 
-			if len(cards) > 1:
-				card = cards[ll.options(cards, idx=True)]
+			if len(cards_and_vars) > 1:
+				# For each card, also list all of its variants
+				opts = [f'{c} ({v})' for c, v in cards_and_vars]
+				try:
+					card, var = cards_and_vars[ll.options(opts, idx=True)]
+				except KeyboardInterrupt:
+					print('')
+					quit(1)
 			else:
-				card = cards[0]
+				card, var = cards_and_vars[0]
 
-			if len(card.variants) == 1:
-				var = card.variants[0]
+			if card is None:
+				ll.err(f'no card found for {num}')
 
 			# Render the coll.csv row
 			all_vars = ll.no_nones(ll.regf('\(([^)]*)\)', all=True)(card.name) + [var] if var else [])
 			row_name = card.name
 			for av in all_vars:
 				row_name = row_name.replace(f' ({av})', '')
+
+			price = card.price(var=var)
 
 			row = {
 				'tcg_category_id': card.category_id,
@@ -46,21 +58,40 @@ def main():
 				'name': row_name,
 				'vars': ','.join(all_vars),
 				'rarity': card.rarity,
+				'value': price,
+				'value_updated': ll.ctime(f'data/prices/{card.category_id}/{card.group_id}.json'),
 			}
 			# print(ll.csv(row).strip())
-			cfn = ll.here('_collection/coll.csv')
-			if not ll.fexists(cfn):
-				ll.write(cfn, ll.csv(row.keys()).strip())
-			ll.append(cfn, ll.csv(row).strip())
 
-			if card is None:
-				ll.err(f'no card found for {num}')
-			price = card.price(var=var)
-			if price > 10:
-				varstr = ' ' + ' '.join([f'[grey70]({v})[/grey70]' for v in all_vars])
-				ll.rule(row_name + varstr)
-				print(card.image())
-				ll.rule(f'${price:.02f}', pre_space=0, post_space=2)
+			# if price > 10:
+			varstr = ' ' + ' '.join([f'[grey70]({v})[/grey70]' for v in all_vars])
+			print(f'\t[bold blue]{card}{varstr}[/bold blue]')
+			if price > 20:
+				col = 'rgb(0,200,75)'
+			elif price > 10:
+				col = 'rgb(0,100,37)'
+			else:
+				col = 'grey70'
+				# print(f'\t\t[grey70]${}[/grey70]')
+			print(f'\t\t[{col}]${price}[/{col}]')
+
+			added_card_rows.append(row)
+			# ll.rule(row_name + varstr)
+			# print(card.image())
+			# ll.rule(f'${price:.02f}', pre_space=0, post_space=2)
+
+	print('')
+
+	try:
+		ans = ll.yn("Add these cards to your collection?")
+	except KeyboardInterrupt:
+		quit(1)
+	if ans:
+		cfn = ll.here('_collection/coll.csv')
+		if not ll.fexists(cfn):
+			ll.write(cfn, ll.csv(row.keys()).strip())
+		for row in added_card_rows:
+			ll.append(cfn, ll.csv(row).strip())
 		# for c in Game(game).set(set).cards:
 			# print(c.name, c.number, c.price())
 
