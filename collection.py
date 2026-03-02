@@ -14,8 +14,8 @@ def parse_row(row):
 
 
 def fmt_row(row):
-	card, vs, _ = parse_row(row)
-	return Card.fmt(card, vs)
+	card, vs, subtype = parse_row(row)
+	return Card.fmt(card, vs, subtype)
 
 
 def main():

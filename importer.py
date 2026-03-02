@@ -67,7 +67,8 @@ def main():
 
 			# if price > 10:
 			varstr = ' ' + ' '.join([f'[grey70]({v})[/grey70]' for v in all_vars])
-			print(f'\t[bold blue]{card}{varstr}[/bold blue]')
+			print(fmt_row(row))
+			# print(f'\t[bold blue]{card}{varstr}[/bold blue]')
 			if price > 20:
 				col = 'rgb(0,200,75)'
 			elif price > 10:
@@ -75,7 +76,7 @@ def main():
 			else:
 				col = 'grey70'
 				# print(f'\t\t[grey70]${}[/grey70]')
-			print(f'\t\t[{col}]${price}[/{col}]')
+			# print(f'\t\t[{col}]${price}[/{col}]')
 
 			added_card_rows.append(row)
 			# ll.rule(row_name + varstr)

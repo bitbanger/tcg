@@ -185,19 +185,21 @@ class Card:
 
 
 	@staticmethod
-	def fmt(card, vs):
-		price = card.price()
+	def fmt(card, vs, subtype):
+		price = card.price(var=subtype)
 
 		name_col = 'khaki3'
 		num_col = 'blue'
 		mag = 0.75
 		vcol = f'rgb({int(100*mag)},{int(100*mag)},{int(175*mag)})'
-		if price > 20:
+		if price >= 20:
 			pcol = 'rgb(0,200,75)'
-		elif price > 10:
+		elif price >= 10:
 			pcol = 'rgb(0,130,37)'
-		elif price > 5:
+		elif price >= 5:
 			pcol = 'grey50'
+		elif price >= 2:
+			pcol = 'grey42'
 		else:
 			pcol = 'grey30'
 
