@@ -1,6 +1,7 @@
 import ll
 import sys
 
+from collection import parse_row
 from model import Card
 
 
@@ -10,14 +11,8 @@ def main():
 	rows = ll.csv(coll_path)
 
 	for row in rows:
-		# Parse card
-		cat_id = row['tcg_category_id']
-		group_id = row['tcg_group_id']
-		product_id = row['tcg_product_id']
-		card = Card.by_id(row['tcg_category_id'], row['tcg_group_id'], row['tcg_product_id'])
+		card, _, subtype = parse_row(row)
 
-		# Parse variant & fetch price
-		subtype = row['tcg_subtype']
 		price = card.price(var=subtype)
 		price_updated = ll.ctime(f'data/prices/{cat_id}/{group_id}.json')
 

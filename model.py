@@ -185,6 +185,38 @@ class Card:
 
 
 	@staticmethod
+	def fmt(card, vs):
+		price = card.price()
+
+		name_col = 'khaki3'
+		num_col = 'blue'
+		mag = 0.75
+		vcol = f'rgb({int(100*mag)},{int(100*mag)},{int(175*mag)})'
+		if price > 20:
+			pcol = 'rgb(0,200,75)'
+		elif price > 10:
+			pcol = 'rgb(0,130,37)'
+		elif price > 5:
+			pcol = 'grey50'
+		else:
+			pcol = 'grey30'
+
+		s = str(card)
+		vsstr = ' '.join(sorted(f'({v})' for v in vs))
+		n, nm = (spl:=s.split('#'))[0].strip(), spl[1].strip()
+
+
+		pstr = f'[{pcol}]${price:.02f}[/{pcol}]'
+
+		s = f'{pstr}\t'
+		s += f'[{name_col}]{n}[/{name_col}] [{num_col}]#{nm}[/{num_col}]'
+		if vsstr:
+			s += f' [{vcol}]{vsstr}[/{vcol}]'
+
+		return s
+
+
+	@staticmethod
 	def by_id(game_id, set_id, card_id):
 		cards = fetch(f'{game_id}/{set_id}/products')
 		for c in cards:
@@ -231,9 +263,11 @@ class Set:
 				if (score:=ll.words_in(norm(name), norm(g['name']))) > best_score:
 					best_score = score
 					json = g
+				elif score==best_score and json and len(norm(g['name'])) < len(norm(json['name'])):
+					json = g
 
 		if json is None:
-			raise Exception(f"No product group found in category ID {game_id} for '{name}'")
+			raise Exception(f"No product group found in category ID {game.category_id} for '{name}'")
 
 		return Set(game, json)
 
@@ -243,7 +277,15 @@ class Set:
 		for g in fetch(f'{game.category_id}/groups'):
 			if str(g['groupId']) == str(set_id):
 				return Set(game, g)
-		raise Exception(f"Group ID {set_id} (category ID {game_id}) not found")
+		raise Exception(f"Group ID {set_id} (category ID {game.category_id}) not found")
+
+
+	@staticmethod
+	def by_abbr(game, abbr):
+		for g in fetch(f'{game.category_id}/groups'):
+			if g['abbreviation'].lower() == abbr.lower():
+				return Set(game, g)
+		raise Exception(f"Group abbreviation '{abbr}' (category ID {game.category_id}) not found")
 
 
 	def card(self, num, limit=1):
@@ -257,6 +299,10 @@ class Set:
 			return None
 
 		return cands if (len(cands)>1 or limit!=1) else cands[0]
+
+
+	def __str__(self):
+		return f'{self.name} ({self.abbreviation})'
 
 
 class Game:
@@ -288,6 +334,8 @@ class Game:
 					if (score:=ll.words_in(query, norm(c[f]))) > best_score:
 						best_score = score
 						json = c
+					elif score==best_score and json and len(norm(c[f])) < len(norm(json[f])):
+						json = c
 
 		if json is None:
 			raise Exception(f"No category found for query '{query}'")
@@ -309,3 +357,13 @@ class Game:
 		if name not in self.sets:
 			self.sets[name] = Set.by_name(self, name)
 		return self.sets[name]
+
+
+	def card(self, name):
+		for g in fetch(f'{self.category_id}/groups'):
+			for c in (s:=Set(self, g)).cards:
+				if 'Luffy' in c.name and 'Monkey' in c.name:
+					# print(ll.regf('\([^)]*\)')(c.name))
+					if 'OP07' not in s.abbreviation:
+						continue
+					print(c.name, s.abbreviation, c.category_id, c.group_id, c.product_id)

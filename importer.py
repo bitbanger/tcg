@@ -1,6 +1,8 @@
 import ll
 
+from collection import fmt_row, parse_row
 from model import Game, Set, Card
+
 
 def main():
 	added_card_rows = []
@@ -79,6 +81,16 @@ def main():
 			# ll.rule(row_name + varstr)
 			# print(card.image())
 			# ll.rule(f'${price:.02f}', pre_space=0, post_space=2)
+
+	print('')
+	ll.rule()
+
+	def skey(r):
+		_card, _, subtype = parse_row(r)
+		return _card.price(var=subtype)
+	added_card_rows = sorted(added_card_rows, key=skey)
+	for row in added_card_rows:
+		print(fmt_row(row))
 
 	print('')
 
