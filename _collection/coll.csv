@@ -1,5 +1,4 @@
 tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,vars,rarity,value,value_updated
-3,24073,623612,Holofoil,Pokemon,SV09: Journey Together,185,N's Zoroark ex,Holofoil,Special Illustration Rare,52.11,2026-03-02 00:05:29
 3,24073,623457,Holofoil,Pokemon,SV09: Journey Together,30,Reshiram ex,Holofoil,Double Rare,0.77,2026-03-02 00:05:29
 3,24073,623470,Holofoil,Pokemon,SV09: Journey Together,43,Veluza ex,Holofoil,Double Rare,0.59,2026-03-02 00:05:29
 3,24073,623480,Holofoil,Pokemon,SV09: Journey Together,53,Iono's Bellibolt ex,Holofoil,Double Rare,0.66,2026-03-02 00:05:29
@@ -175,7 +174,6 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.24,2026-03-02 03:12:55
 3,24541,676913,Reverse Holofoil,Pokemon,ME: Ascended Heroes,78,Team Rocket's exeggutor,"Team Rocket,Reverse Holofoil",Rare,0.43,2026-03-02 03:12:55
 3,24541,676964,Reverse Holofoil,Pokemon,ME: Ascended Heroes,143,Pecharunt,"Poke Ball,Reverse Holofoil",Rare,0.68,2026-03-02 03:12:55
-3,24541,676030,Holofoil,Pokemon,ME: Ascended Heroes,218,Erika's Tangela,Holofoil,Illustration Rare,29.32,2026-03-02 03:12:55
 3,24541,676083,Holofoil,Pokemon,ME: Ascended Heroes,271,Mega Dragonite ex,Holofoil,Mega Attack Rare,49.31,2026-03-02 03:12:55
 3,24451,680480,Holofoil,Pokemon,ME: Mega Evolution Promo,31,N's Zekrom,Holofoil,Promo,7.13,2026-03-02 04:40:02
 3,24541,675998,Reverse Holofoil,Pokemon,ME: Ascended Heroes,186,Counter Gain,Reverse Holofoil,Common,0.25,2026-03-02 03:12:55
