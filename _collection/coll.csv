@@ -1,231 +1,243 @@
 tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,vars,rarity,value,value_updated
-3,24073,623457,Holofoil,Pokemon,SV09: Journey Together,30,Reshiram ex,Holofoil,Double Rare,0.77,2026-03-02 00:05:29
-3,24073,623470,Holofoil,Pokemon,SV09: Journey Together,43,Veluza ex,Holofoil,Double Rare,0.59,2026-03-02 00:05:29
-3,24073,623480,Holofoil,Pokemon,SV09: Journey Together,53,Iono's Bellibolt ex,Holofoil,Double Rare,0.66,2026-03-02 00:05:29
-3,24073,623591,Holofoil,Pokemon,SV09: Journey Together,164,Lillie's Ribombee,Holofoil,Illustration Rare,4.79,2026-03-02 00:05:29
-3,24073,623525,Holofoil,Pokemon,SV09: Journey Together,98,N's Zoroark ex,Holofoil,Double Rare,2.05,2026-03-02 00:05:29
-3,24073,623483,Holofoil,Pokemon,SV09: Journey Together,56,Lillie's Clefairy ex,Holofoil,Double Rare,1.83,2026-03-02 00:05:29
-3,24073,623593,Holofoil,Pokemon,SV09: Journey Together,166,Lycanroc,Holofoil,Illustration Rare,2.52,2026-03-02 00:05:29
-3,24073,623478,Holofoil,Pokemon,SV09: Journey Together,51,Tapu Koko ex,Holofoil,Double Rare,0.55,2026-03-02 00:05:29
-3,24073,623588,Holofoil,Pokemon,SV09: Journey Together,161,Articuno,Holofoil,Illustration Rare,17.25,2026-03-02 00:05:29
-3,24073,623541,Holofoil,Pokemon,SV09: Journey Together,114,Salamence ex,Holofoil,Double Rare,0.9,2026-03-02 00:05:29
-3,24073,623602,Holofoil,Pokemon,SV09: Journey Together,175,N's Zoroark ex,Holofoil,Ultra Rare,4.89,2026-03-02 00:05:29
-3,24073,623438,Holofoil,Pokemon,SV09: Journey Together,11,Amoonguss ex,Holofoil,Double Rare,0.69,2026-03-02 00:05:29
-3,24073,623595,Holofoil,Pokemon,SV09: Journey Together,168,Furret,Holofoil,Illustration Rare,5.31,2026-03-02 00:05:29
-3,24073,623604,Holofoil,Pokemon,SV09: Journey Together,177,Salamence ex,Holofoil,Ultra Rare,2.72,2026-03-02 00:05:29
-3,24073,623445,holofoil,Pokemon,SV09: Journey Together,18,Meowscarada,holofoil,Rare,0.19,2026-03-02 00:05:29
-3,24073,623522,holofoil,Pokemon,SV09: Journey Together,95,Tyranitar,holofoil,Rare,0.24,2026-03-02 00:05:29
-3,24073,623482,holofoil,Pokemon,SV09: Journey Together,55,Iono's Kilowattrel,holofoil,Rare,0.15,2026-03-02 00:05:29
-3,24073,623534,holofoil,Pokemon,SV09: Journey Together,107,Magearna,holofoil,Rare,0.15,2026-03-02 00:05:29
-3,24073,623464,holofoil,Pokemon,SV09: Journey Together,37,Ludicolo,holofoil,Rare,0.13,2026-03-02 00:05:29
-3,24073,623464,holofoil,Pokemon,SV09: Journey Together,37,Ludicolo,holofoil,Rare,0.13,2026-03-02 00:05:29
-3,24073,623445,holofoil,Pokemon,SV09: Journey Together,18,Meowscarada,holofoil,Rare,0.19,2026-03-02 00:05:29
-3,24073,623448,holofoil,Pokemon,SV09: Journey Together,21,Magmortar,holofoil,Rare,0.17,2026-03-02 00:05:29
-3,24073,623543,holofoil,Pokemon,SV09: Journey Together,116,N's Reshiram,holofoil,Rare,0.23,2026-03-02 00:05:29
-3,24073,623534,holofoil,Pokemon,SV09: Journey Together,107,Magearna,holofoil,Rare,0.15,2026-03-02 00:05:29
-3,24073,623544,holofoil,Pokemon,SV09: Journey Together,117,Hop's Snorlax,holofoil,Rare,0.26,2026-03-02 00:05:29
-3,24073,623494,holofoil,Pokemon,SV09: Journey Together,67,Lillie's Ribombee,holofoil,Rare,0.19,2026-03-02 00:05:29
-3,24073,623490,holofoil,Pokemon,SV09: Journey Together,63,Metagross,holofoil,Rare,0.13,2026-03-02 00:05:29
-3,24073,623512,holofoil,Pokemon,SV09: Journey Together,85,Lycanroc,holofoil,Rare,0.19,2026-03-02 00:05:29
-3,24073,623494,holofoil,Pokemon,SV09: Journey Together,67,Lillie's Ribombee,holofoil,Rare,0.19,2026-03-02 00:05:29
-3,24073,623555,holofoil,Pokemon,SV09: Journey Together,128,Noivern,holofoil,Rare,0.16,2026-03-02 00:05:29
-3,24073,623563,holofoil,Pokemon,SV09: Journey Together,136,Hop's Dubwool,holofoil,Rare,0.16,2026-03-02 00:05:29
-3,24073,623430,holofoil,Pokemon,SV09: Journey Together,3,Butterfree,holofoil,Rare,0.16,2026-03-02 00:05:29
-3,24073,623522,holofoil,Pokemon,SV09: Journey Together,95,Tyranitar,holofoil,Rare,0.24,2026-03-02 00:05:29
-3,24073,623468,holofoil,Pokemon,SV09: Journey Together,41,Wailord,holofoil,Rare,0.18,2026-03-02 00:05:29
-3,24073,623555,holofoil,Pokemon,SV09: Journey Together,128,Noivern,holofoil,Rare,0.16,2026-03-02 00:05:29
-3,24073,623544,holofoil,Pokemon,SV09: Journey Together,117,Hop's Snorlax,holofoil,Rare,0.26,2026-03-02 00:05:29
-3,24073,623468,holofoil,Pokemon,SV09: Journey Together,41,Wailord,holofoil,Rare,0.18,2026-03-02 00:05:29
-3,24073,623430,holofoil,Pokemon,SV09: Journey Together,3,Butterfree,holofoil,Rare,0.16,2026-03-02 00:05:29
-3,24073,623522,holofoil,Pokemon,SV09: Journey Together,95,Tyranitar,holofoil,Rare,0.24,2026-03-02 00:05:29
-3,24073,623509,holofoil,Pokemon,SV09: Journey Together,82,Regirock,holofoil,Rare,0.14,2026-03-02 00:05:29
-3,24073,623490,reverse holofoil,Pokemon,SV09: Journey Together,63,Metagross,reverse holofoil,Rare,0.32,2026-03-02 00:05:29
-3,24073,623448,reverse holofoil,Pokemon,SV09: Journey Together,21,Magmortar,reverse holofoil,Rare,0.31,2026-03-02 00:05:29
-3,24073,623430,reverse holofoil,Pokemon,SV09: Journey Together,3,Butterfree,reverse holofoil,Rare,0.32,2026-03-02 00:05:29
-3,24073,623543,reverse holofoil,Pokemon,SV09: Journey Together,116,N's Reshiram,reverse holofoil,Rare,0.44,2026-03-02 00:05:29
-3,24073,623494,reverse holofoil,Pokemon,SV09: Journey Together,67,Lillie's Ribombee,reverse holofoil,Rare,0.31,2026-03-02 00:05:29
-3,24073,623544,reverse holofoil,Pokemon,SV09: Journey Together,117,Hop's Snorlax,reverse holofoil,Rare,0.5,2026-03-02 00:05:29
-3,24073,623512,reverse holofoil,Pokemon,SV09: Journey Together,85,Lycanroc,reverse holofoil,Rare,0.51,2026-03-02 00:05:29
-3,24073,623482,reverse holofoil,Pokemon,SV09: Journey Together,55,Iono's Kilowattrel,reverse holofoil,Rare,0.32,2026-03-02 00:05:29
-3,24073,623555,reverse holofoil,Pokemon,SV09: Journey Together,128,Noivern,reverse holofoil,Rare,0.34,2026-03-02 00:05:29
-3,24073,623520,reverse holofoil,Pokemon,SV09: Journey Together,93,Paldean Wooper,reverse holofoil,Common,0.24,2026-03-02 00:05:29
-3,24073,623529,reverse holofoil,Pokemon,SV09: Journey Together,102,Escavalier,reverse holofoil,Uncommon,0.18,2026-03-02 00:05:29
-3,24073,623568,reverse holofoil,Pokemon,SV09: Journey Together,141,Squawkabilly,reverse holofoil,Common,0.22,2026-03-02 00:05:29
-3,24073,623549,reverse holofoil,Pokemon,SV09: Journey Together,122,Kecleon,reverse holofoil,Common,0.18,2026-03-02 00:05:29
-3,24073,623434,reverse holofoil,Pokemon,SV09: Journey Together,7,Lilligant,reverse holofoil,Common,0.25,2026-03-02 00:05:29
-3,24073,623497,reverse holofoil,Pokemon,SV09: Journey Together,70,Dhelmise,reverse holofoil,Common,0.26,2026-03-02 00:05:29
-3,24073,623471,reverse holofoil,Pokemon,SV09: Journey Together,44,Alolan Geodude,reverse holofoil,Common,0.27,2026-03-02 00:05:29
-3,24073,623459,reverse holofoil,Pokemon,SV09: Journey Together,32,Articuno,reverse holofoil,Uncommon,0.41,2026-03-02 00:05:29
-3,24073,623431,reverse holofoil,Pokemon,SV09: Journey Together,4,Paras,reverse holofoil,Common,0.24,2026-03-02 00:05:29
-3,24073,623558,reverse holofoil,Pokemon,SV09: Journey Together,131,Skwovet,reverse holofoil,Common,0.24,2026-03-02 00:05:29
-3,24073,623552,reverse holofoil,Pokemon,SV09: Journey Together,125,Minccino,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623572,reverse holofoil,Pokemon,SV09: Journey Together,145,Black Belt's Training,reverse holofoil,Common,0.35,2026-03-02 00:05:29
-3,24073,623462,reverse holofoil,Pokemon,SV09: Journey Together,35,Lotad,reverse holofoil,Common,0.22,2026-03-02 00:05:29
-3,24073,623479,reverse holofoil,Pokemon,SV09: Journey Together,52,Iono's Tadbulb,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623489,reverse holofoil,Pokemon,SV09: Journey Together,62,Metang,reverse holofoil,Common,0.21,2026-03-02 00:05:29
-3,24073,623577,reverse holofoil,Pokemon,SV09: Journey Together,150,Levincia,reverse holofoil,Uncommon,0.28,2026-03-02 00:05:29
-3,24073,623436,reverse holofoil,Pokemon,SV09: Journey Together,9,Karrablast,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623501,reverse holofoil,Pokemon,SV09: Journey Together,74,Milcery,reverse holofoil,Common,0.21,2026-03-02 00:05:29
-3,24073,623530,reverse holofoil,Pokemon,SV09: Journey Together,103,N's Klink,reverse holofoil,Common,0.24,2026-03-02 00:05:29
-3,24073,623474,reverse holofoil,Pokemon,SV09: Journey Together,47,Iono's Voltorb,reverse holofoil,Common,0.22,2026-03-02 00:05:29
-3,24073,623583,reverse holofoil,Pokemon,SV09: Journey Together,156,Redeemable Ticket,reverse holofoil,Uncommon,0.37,2026-03-02 00:05:29
-3,24073,623574,reverse holofoil,Pokemon,SV09: Journey Together,147,Hop's Bag,reverse holofoil,Uncommon,0.2,2026-03-02 00:05:29
-3,24073,623450,reverse holofoil,Pokemon,SV09: Journey Together,23,Combusken,reverse holofoil,Uncommon,0.22,2026-03-02 00:05:29
-3,24073,623519,reverse holofoil,Pokemon,SV09: Journey Together,92,Weezing,reverse holofoil,Uncommon,0.35,2026-03-02 00:05:29
-3,24073,623510,reverse holofoil,Pokemon,SV09: Journey Together,83,Pancham,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623562,reverse holofoil,Pokemon,SV09: Journey Together,135,Hop's Wooloo,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623454,reverse holofoil,Pokemon,SV09: Journey Together,27,N's Darmanitan,reverse holofoil,Uncommon,0.32,2026-03-02 00:05:29
-3,24073,623585,reverse holofoil,Pokemon,SV09: Journey Together,158,Super Potion,reverse holofoil,Uncommon,0.3,2026-03-02 00:05:29
-3,24073,623499,reverse holofoil,Pokemon,SV09: Journey Together,72,Morgrem,reverse holofoil,Common,0.2,2026-03-02 00:05:29
-3,24073,623551,reverse holofoil,Pokemon,SV09: Journey Together,124,Audino,reverse holofoil,Common,0.18,2026-03-02 00:05:29
-3,24073,623476,reverse holofoil,Pokemon,SV09: Journey Together,49,N's Joltik,reverse holofoil,Common,0.26,2026-03-02 00:05:29
-3,24073,623542,reverse holofoil,Pokemon,SV09: Journey Together,115,Druddigon,reverse holofoil,Common,0.26,2026-03-02 00:05:29
-3,24073,623463,reverse holofoil,Pokemon,SV09: Journey Together,36,Lombre,reverse holofoil,Common,0.19,2026-03-02 00:05:29
-3,24073,623503,reverse holofoil,Pokemon,SV09: Journey Together,76,Cubone,reverse holofoil,Common,0.22,2026-03-02 00:05:29
-3,24073,623586,reverse holofoil,Pokemon,SV09: Journey Together,159,Spiky Energy,reverse holofoil,Uncommon,0.32,2026-03-02 00:05:29
-3,24073,623428,reverse holofoil,Pokemon,SV09: Journey Together,1,Caterpie,reverse holofoil,Common,0.18,2026-03-02 00:05:29
-3,24073,623565,reverse holofoil,Pokemon,SV09: Journey Together,138,Hop's Cramorant,reverse holofoil,Uncommon,0.23,2026-03-02 00:05:29
-3,24073,623566,reverse holofoil,Pokemon,SV09: Journey Together,139,Lechonk,reverse holofoil,Common,0.18,2026-03-02 00:05:29
-3,24073,623533,reverse holofoil,Pokemon,SV09: Journey Together,106,Galarian Stunfisk,reverse holofoil,Common,0.18,2026-03-02 00:05:29
-3,24073,623453,reverse holofoil,Pokemon,SV09: Journey Together,26,N's Darumaka,reverse holofoil,Common,0.24,2026-03-02 00:05:29
-3,24073,623516,reverse holofoil,Pokemon,SV09: Journey Together,89,Toedscruel,reverse holofoil,Uncommon,0.33,2026-03-02 00:05:29
-3,24073,623498,reverse holofoil,Pokemon,SV09: Journey Together,71,Impidimp,reverse holofoil,Common,0.17,2026-03-02 00:05:29
-3,24073,623576,reverse holofoil,Pokemon,SV09: Journey Together,149,Iris's Fighting Spirit,reverse holofoil,Uncommon,0.27,2026-03-02 00:05:29
-3,24073,623540,reverse holofoil,Pokemon,SV09: Journey Together,113,Shelgon,reverse holofoil,Common,0.21,2026-03-02 00:05:29
-3,24073,623513,reverse holofoil,Pokemon,SV09: Journey Together,86,Hop's Silicobra,reverse holofoil,Common,0.17,2026-03-02 00:05:29
-3,24073,623531,reverse holofoil,Pokemon,SV09: Journey Together,104,N's Klang,reverse holofoil,Common,0.19,2026-03-02 00:05:29
-3,24073,623442,reverse holofoil,Pokemon,SV09: Journey Together,15,Virizion,reverse holofoil,Uncommon,0.36,2026-03-02 00:05:29
-3,24073,623491,reverse holofoil,Pokemon,SV09: Journey Together,64,N's Sigilyph,reverse holofoil,Common,0.21,2026-03-02 00:05:29
-3,24073,623546,reverse holofoil,Pokemon,SV09: Journey Together,119,Furret,reverse holofoil,Common,0.19,2026-03-02 00:05:29
-3,24073,623447,reverse holofoil,Pokemon,SV09: Journey Together,20,Magmar,reverse holofoil,Common,0.19,2026-03-02 00:05:29
-3,24073,623554,reverse holofoil,Pokemon,SV09: Journey Together,127,Noibat,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623564,reverse holofoil,Pokemon,SV09: Journey Together,137,Cramorant,reverse holofoil,Common,0.22,2026-03-02 00:05:29
-3,24073,623485,reverse holofoil,Pokemon,SV09: Journey Together,58,Mr. Mime,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623432,reverse holofoil,Pokemon,SV09: Journey Together,5,Parasect,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623452,reverse holofoil,Pokemon,SV09: Journey Together,25,Torkoal,reverse holofoil,Common,0.23,2026-03-02 00:05:29
-3,24073,623575,reverse holofoil,Pokemon,SV09: Journey Together,148,Hop's Choice Band,reverse holofoil,Uncommon,0.23,2026-03-02 00:05:29
-3,24073,623505,reverse holofoil,Pokemon,SV09: Journey Together,78,Piloswine,reverse holofoil,Common,0.24,2026-03-02 00:05:29
-3,24073,623519,reverse holofoil,Pokemon,SV09: Journey Together,92,Weezing,reverse holofoil,Uncommon,0.35,2026-03-02 00:05:29
-3,24073,623435,reverse holofoil,Pokemon,SV09: Journey Together,8,Maractus,reverse holofoil,Uncommon,0.24,2026-03-02 00:05:29
-3,2374,623594,Holofoil,Pokemon,Miscellaneous Cards & Products,167,N's Reshiram,"Journey Together Stamped,Holofoil",Illustration Rare,16.69,2026-03-01 01:02:34
-89,24519,666473,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,177,Azir - Sovereign,Foil,Epic,6.17,2026-03-01 22:26:02
-89,24519,664921,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,184,Relentless Pursuit,Foil,Epic,6.69,2026-03-01 22:26:02
-89,24519,666812,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,198,Arise!,Foil,Epic,25.72,2026-03-01 22:26:02
-89,24519,665011,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,119,Jax - Unrelenting,Foil,Epic,2.25,2026-03-01 22:26:02
-89,24519,666493,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,29,Rek'Sai - Breacher,Foil,Epic,5.1,2026-03-01 22:26:02
-89,24519,666825,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,149,Ezreal - Prodigy,Foil,Epic,55.76,2026-03-01 22:26:02
-89,24519,665028,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,148a,Draven - Audacious,"Alternate Art,Foil",Showcase,20.65,2026-03-01 22:26:02
-89,24519,678229,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,r03a,Mind Rune,"Alternate Art,Foil",Showcase,10.65,2026-03-01 22:26:02
-89,24519,666788,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,224,Aphelios - Exalted,"Overnumbered,Foil",Showcase,94.31,2026-03-01 22:26:02
-89,24519,666461,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,85a,Ornn - Forge God,"Alternate Art,Foil",Showcase,4.79,2026-03-01 22:26:02
-89,24519,666476,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,171a,Renata Glasc - Industrialist,"Alternate Art,Foil",Showcase,2.43,2026-03-01 22:26:02
-89,24519,663430,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,115,Trinity Force,Foil,Rare,0.5,2026-03-01 22:26:02
-89,24519,665487,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,82,Ezreal - Dashing,Foil,Rare,0.19,2026-03-01 22:26:02
-89,24519,663442,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,185,Draven - Glorious Executioner,Foil,Rare,0.13,2026-03-01 22:26:02
-89,24519,666398,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,50,Azir - Ascendant,Foil,Rare,0.2,2026-03-01 22:26:02
-89,24519,666487,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,172,Sacred Shears,Foil,Rare,0.2,2026-03-01 22:26:02
-89,24519,666585,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,53,Janna - Savior,Foil,Rare,0.32,2026-03-01 22:26:02
-89,24519,665486,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,146,Vex - Cheerless,Foil,Rare,1.77,2026-03-01 22:26:02
-89,24519,664927,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,199,Ezreal - Prodigal Explorer,Foil,Rare,0.15,2026-03-01 22:26:02
-89,24519,663445,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,20,Draven - Vanquisher,Foil,Rare,0.62,2026-03-01 22:26:02
-89,24519,666588,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,83,Hextech Anomaly,Foil,Rare,0.22,2026-03-01 22:26:02
-89,24519,663438,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,203,Sivir - Battle Mistress,Foil,Rare,0.14,2026-03-01 22:26:02
-89,24519,664920,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,183,Lucian - Purifier,Foil,Rare,0.16,2026-03-01 22:26:02
-89,24519,666365,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,25,Rengar - Pouncing,Foil,Rare,0.43,2026-03-01 22:26:02
-89,24519,665031,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,170,Rek'Sai - Swarm Queen,Foil,Rare,0.19,2026-03-01 22:26:02
-89,24519,664925,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,193,Jax - Grandmaster At Arms,Foil,Rare,0.13,2026-03-01 22:26:02
-89,24519,666847,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,52,Heart of Dark Ice,Foil,Rare,0.29,2026-03-01 22:26:02
-89,24519,664924,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,189,Ornn - Fire Below the Mountain,Foil,Rare,0.11,2026-03-01 22:26:02
-89,24519,665143,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,49,Aphelios - Exalted,Foil,Rare,0.28,2026-03-01 22:26:02
-89,24519,666488,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,142,Jae Medarda,Foil,Rare,0.12,2026-03-01 22:26:02
-89,24519,665023,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,145,Switcheroo,Foil,Rare,0.58,2026-03-01 22:26:02
-89,24519,664966,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,169,Altar of Memories,Foil,Rare,0.14,2026-03-01 22:26:02
-89,24519,666486,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,173,Soraka - Wanderer,Foil,Rare,0.29,2026-03-01 22:26:02
-89,24519,666598,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,139,Edge of Night,Foil,Rare,0.29,2026-03-01 22:26:02
-89,24519,666410,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,55,Needlessly Large Yordle,Foil,Rare,0.19,2026-03-01 22:26:02
-89,24519,666490,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,114,Marching Orders,Foil,Rare,0.21,2026-03-01 22:26:02
-89,24519,663434,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,56,Sterak's Gage,Foil,Rare,0.26,2026-03-01 22:26:02
-89,24519,666813,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,26,Rumble - Hotheaded,Foil,Rare,0.17,2026-03-01 22:26:02
-89,24519,666459,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,85,Ornn - Forge God,Foil,Rare,0.39,2026-03-01 22:26:02
-89,24519,663444,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,113,Lucian - Merciless,Foil,Rare,0.35,2026-03-01 22:26:02
-89,24519,666489,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,140,Fizz - Trickster,Foil,Rare,1.49,2026-03-01 22:26:02
-89,24519,666587,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,81,Card Sharp,Foil,Rare,0.32,2026-03-01 22:26:02
-89,24519,665012,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,23,Piercing Light,Foil,Rare,0.69,2026-03-01 22:26:02
-89,24519,663435,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,51,Guardian Angel,Foil,Rare,3.41,2026-03-01 22:26:02
-89,24519,664972,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,116,Yone - Blademaster,Foil,Rare,0.21,2026-03-01 22:26:02
-89,24519,663439,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,201,Renata Glasc - Chem-Baroness,Foil,Rare,0.15,2026-03-01 22:26:02
-89,24519,664922,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,187,Rek'sai - Void Burrower,Foil,Rare,0.11,2026-03-01 22:26:02
-89,24519,666484,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,175,Undertitan,Foil,Rare,0.2,2026-03-01 22:26:02
-89,24519,666442,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,79,Bard - Mercurial,Foil,Rare,0.27,2026-03-01 22:26:02
-89,24519,666594,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,110,Fiora - Peerless,Foil,Rare,0.18,2026-03-01 22:26:02
-89,24519,665013,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,24,Rell - Magnetic,Foil,Rare,0.23,2026-03-01 22:26:02
-89,24519,666888,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,109,Akshan - Mischievous,Foil,Rare,1.65,2026-03-01 22:26:02
-89,24519,666485,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,174,Trove Golem,Foil,Rare,0.19,2026-03-01 22:26:02
-89,24519,666454,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,84,Jayce - Man of Progress,Foil,Rare,0.55,2026-03-01 22:26:02
-89,24519,663436,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,22,Long Sword,Foil,Rare,0.33,2026-03-01 22:26:02
-89,24519,666600,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,143,Sivir - Mercenary,Foil,Rare,0.24,2026-03-01 22:26:02
-3,24541,675843,Holofoil,Pokemon,ME: Ascended Heroes,31,Mega Emboar ex,Holofoil,Double Rare,1.42,2026-03-02 03:12:55
-3,24541,675951,Holofoil,Pokemon,ME: Ascended Heroes,139,Mandibuzz ex,Holofoil,Double Rare,0.77,2026-03-02 03:12:55
-3,24541,675934,Holofoil,Pokemon,ME: Ascended Heroes,122,Okidogi,Holofoil,Rare,0.14,2026-03-02 03:12:55
-3,24541,675990,Holofoil,Pokemon,ME: Ascended Heroes,178,Terapagos,Holofoil,Rare,0.15,2026-03-02 03:12:55
-3,24541,675898,Holofoil,Pokemon,ME: Ascended Heroes,86,Mismagius,Holofoil,Rare,0.18,2026-03-02 03:12:55
-3,24541,675879,Holofoil,Pokemon,ME: Ascended Heroes,67,Tapu Koko,Holofoil,Rare,0.13,2026-03-02 03:12:55
-3,24541,675953,Holofoil,Pokemon,ME: Ascended Heroes,141,Hoopa,Holofoil,Rare,0.17,2026-03-02 03:12:55
-3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.24,2026-03-02 03:12:55
-3,24541,676913,Reverse Holofoil,Pokemon,ME: Ascended Heroes,78,Team Rocket's exeggutor,"Team Rocket,Reverse Holofoil",Rare,0.43,2026-03-02 03:12:55
-3,24541,676964,Reverse Holofoil,Pokemon,ME: Ascended Heroes,143,Pecharunt,"Poke Ball,Reverse Holofoil",Rare,0.68,2026-03-02 03:12:55
-3,24541,676083,Holofoil,Pokemon,ME: Ascended Heroes,271,Mega Dragonite ex,Holofoil,Mega Attack Rare,49.31,2026-03-02 03:12:55
-3,24451,680480,Holofoil,Pokemon,ME: Mega Evolution Promo,31,N's Zekrom,Holofoil,Promo,7.13,2026-03-02 04:40:02
-3,24541,675998,Reverse Holofoil,Pokemon,ME: Ascended Heroes,186,Counter Gain,Reverse Holofoil,Common,0.25,2026-03-02 03:12:55
-3,24541,676003,Reverse Holofoil,Pokemon,ME: Ascended Heroes,191,Light Ball,Reverse Holofoil,Uncommon,2.53,2026-03-02 03:12:55
-3,24541,676021,Reverse Holofoil,Pokemon,ME: Ascended Heroes,209,Team Rocket's Transceiver,Reverse Holofoil,Uncommon,0.47,2026-03-02 03:12:55
-3,24541,676970,Reverse Holofoil,Pokemon,ME: Ascended Heroes,151,Dragonair,"Love Ball,Reverse Holofoil",Uncommon,0.5,2026-03-02 03:12:55
-3,24541,676993,Reverse Holofoil,Pokemon,ME: Ascended Heroes,2,Erika's Gloom,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.3,2026-03-02 03:12:55
-3,24541,676949,Reverse Holofoil,Pokemon,ME: Ascended Heroes,123,Gastly,"Dusk Ball,Reverse Holofoil",Common,0.53,2026-03-02 03:12:55
-3,24541,677086,Reverse Holofoil,Pokemon,ME: Ascended Heroes,119,Carkol,"Energy Symbol Pattern,Reverse Holofoil",Common,0.41,2026-03-02 03:12:55
-3,24541,677129,Reverse Holofoil,Pokemon,ME: Ascended Heroes,176,Drampa,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.31,2026-03-02 03:12:55
-3,24541,676905,Reverse Holofoil,Pokemon,ME: Ascended Heroes,66,Vikavolt,"Quick Ball,Reverse Holofoil",Uncommon,0.3,2026-03-02 03:12:55
-3,24541,676926,Reverse Holofoil,Pokemon,ME: Ascended Heroes,94,Slurpuff,"Love Ball,Reverse Holofoil",Uncommon,0.47,2026-03-02 03:12:55
-3,24541,677026,Reverse Holofoil,Pokemon,ME: Ascended Heroes,41,Totodile,"Energy Symbol Pattern,Reverse Holofoil",Common,0.23,2026-03-02 03:12:55
-3,24541,676859,Reverse Holofoil,Pokemon,ME: Ascended Heroes,9,Bayleef,"Friend Ball,Reverse Holofoil",Uncommon,0.33,2026-03-02 03:12:55
-3,24541,677099,Reverse Holofoil,Pokemon,ME: Ascended Heroes,134,Scraggy,"Energy Symbol Pattern,Reverse Holofoil",Common,0.35,2026-03-02 03:12:55
-3,24541,676892,Reverse Holofoil,Pokemon,ME: Ascended Heroes,50,N's Vanillish,"Poke Ball,Reverse Holofoil",Common,0.28,2026-03-02 03:12:55
-3,24541,676978,Reverse Holofoil,Pokemon,ME: Ascended Heroes,161,Team Rocket's Meowth,"Team Rocket,Reverse Holofoil",Common,0.28,2026-03-02 03:12:55
-3,24541,675934,Holofoil,Pokemon,ME: Ascended Heroes,122,Okidogi,Holofoil,Rare,0.14,2026-03-02 03:12:55
-3,24541,675990,Holofoil,Pokemon,ME: Ascended Heroes,178,Terapagos,Holofoil,Rare,0.15,2026-03-02 03:12:55
-3,24541,675898,Holofoil,Pokemon,ME: Ascended Heroes,86,Mismagius,Holofoil,Rare,0.18,2026-03-02 03:12:55
-3,24541,675932,Holofoil,Pokemon,ME: Ascended Heroes,120,Coalossal,Holofoil,Rare,0.18,2026-03-02 03:12:55
-3,24541,675898,Holofoil,Pokemon,ME: Ascended Heroes,86,Mismagius,Holofoil,Rare,0.18,2026-03-02 03:12:55
-3,24541,675911,Holofoil,Pokemon,ME: Ascended Heroes,99,Munkidori,Holofoil,Rare,0.22,2026-03-02 03:12:55
-3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.24,2026-03-02 03:12:55
-3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.24,2026-03-02 03:12:55
-3,24541,676939,Reverse Holofoil,Pokemon,ME: Ascended Heroes,108,Groudon,"Dusk Ball,Reverse Holofoil",Rare,0.27,2026-03-02 03:12:55
-3,24541,676906,Reverse Holofoil,Pokemon,ME: Ascended Heroes,67,Tapu Koko,"Quick Ball,Reverse Holofoil",Rare,0.28,2026-03-02 03:12:55
-3,24541,677053,Reverse Holofoil,Pokemon,ME: Ascended Heroes,78,Team Rocket's exeggutor,"Energy Symbol Pattern,Reverse Holofoil",Rare,0.31,2026-03-02 03:12:55
-3,24541,675888,Holofoil,Pokemon,ME: Ascended Heroes,76,Lillie's Clefairy ex,Holofoil,Double Rare,1.02,2026-03-02 03:12:55
-3,24541,676072,Holofoil,Pokemon,ME: Ascended Heroes,260,Glass Trumpet,Holofoil,Ultra Rare,1.74,2026-03-02 03:12:55
-3,24541,676041,Holofoil,Pokemon,ME: Ascended Heroes,229,Heliolisk,Holofoil,Illustration Rare,3.51,2026-03-02 03:12:55
-3,24541,676065,Holofoil,Pokemon,ME: Ascended Heroes,253,Mega Audino ex,Holofoil,Ultra Rare,3.82,2026-03-02 03:12:55
-3,24541,675855,Holofoil,Pokemon,ME: Ascended Heroes,43,Mega Feraligatr ex,Holofoil,Double Rare,5.03,2026-03-02 03:12:55
-3,24451,680480,Holofoil,Pokemon,ME: Mega Evolution Promo,31,N's Zekrom,Holofoil,Promo,7.13,2026-03-02 04:40:02
-3,2374,677399,Holofoil,Pokemon,Miscellaneous Cards & Products,123,Gastly,"Cosmos Holo,Holofoil",Common,0.24,2026-03-02 15:57:06
-3,24541,677031,Reverse Holofoil,Pokemon,ME: Ascended Heroes,49,N's Vanillite,"Energy Symbol Pattern,Reverse Holofoil",Common,0.2,2026-03-02 03:12:55
-3,24541,677026,Reverse Holofoil,Pokemon,ME: Ascended Heroes,41,Totodile,"Energy Symbol Pattern,Reverse Holofoil",Common,0.23,2026-03-02 03:12:55
-3,24541,676895,Reverse Holofoil,Pokemon,ME: Ascended Heroes,53,Frosmoth,"Friend Ball,Reverse Holofoil",Uncommon,0.26,2026-03-02 03:12:55
-3,24541,676934,Reverse Holofoil,Pokemon,ME: Ascended Heroes,102,Hitmontop,"Dusk Ball,Reverse Holofoil",Common,0.26,2026-03-02 03:12:55
-3,24541,676858,Reverse Holofoil,Pokemon,ME: Ascended Heroes,8,Chikorita,"Friend Ball,Reverse Holofoil",Common,0.26,2026-03-02 03:12:55
-3,24541,676857,Reverse Holofoil,Pokemon,ME: Ascended Heroes,7,Erika's Tangela,"Poke Ball,Reverse Holofoil",Common,0.28,2026-03-02 03:12:55
-3,24541,676883,Reverse Holofoil,Pokemon,ME: Ascended Heroes,37,Raboot,"Friend Ball,Reverse Holofoil",Common,0.29,2026-03-02 03:12:55
-3,24541,677062,Reverse Holofoil,Pokemon,ME: Ascended Heroes,90,Shuppet,"Energy Symbol Pattern,Reverse Holofoil",Common,0.3,2026-03-02 03:12:55
-3,24541,676890,Reverse Holofoil,Pokemon,ME: Ascended Heroes,46,Snorunt,"Love Ball,Reverse Holofoil",Common,0.31,2026-03-02 03:12:55
-3,24541,677129,Reverse Holofoil,Pokemon,ME: Ascended Heroes,176,Drampa,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.31,2026-03-02 03:12:55
-3,24541,677129,Reverse Holofoil,Pokemon,ME: Ascended Heroes,176,Drampa,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.31,2026-03-02 03:12:55
-3,24541,677089,Reverse Holofoil,Pokemon,ME: Ascended Heroes,123,Gastly,"Energy Symbol Pattern,Reverse Holofoil",Common,0.32,2026-03-02 03:12:55
-3,24541,676007,Reverse Holofoil,Pokemon,ME: Ascended Heroes,195,N's PP Up,Reverse Holofoil,Uncommon,0.33,2026-03-02 03:12:55
-3,24541,676863,Reverse Holofoil,Pokemon,ME: Ascended Heroes,14,Cascoon,"Love Ball,Reverse Holofoil",Common,0.33,2026-03-02 03:12:55
-3,24541,676866,Reverse Holofoil,Pokemon,ME: Ascended Heroes,17,Grubbin,"Quick Ball,Reverse Holofoil",Common,0.33,2026-03-02 03:12:55
-3,24541,677099,Reverse Holofoil,Pokemon,ME: Ascended Heroes,134,Scraggy,"Energy Symbol Pattern,Reverse Holofoil",Common,0.35,2026-03-02 03:12:55
-3,24541,676900,Reverse Holofoil,Pokemon,ME: Ascended Heroes,60,Eelektrik,"Quick Ball,Reverse Holofoil",Uncommon,0.36,2026-03-02 03:12:55
-3,24541,676023,Reverse Holofoil,Pokemon,ME: Ascended Heroes,211,Thick Scale,Reverse Holofoil,Uncommon,0.82,2026-03-02 03:12:55
-3,24541,676878,Reverse Holofoil,Pokemon,ME: Ascended Heroes,32,N's Darumaka,"Poke Ball,Reverse Holofoil",Common,1.45,2026-03-02 03:12:55
-3,24541,676003,Reverse Holofoil,Pokemon,ME: Ascended Heroes,191,Light Ball,Reverse Holofoil,Uncommon,2.53,2026-03-02 03:12:55
+3,24073,623457,Holofoil,Pokemon,SV09: Journey Together,30,Reshiram ex,Holofoil,Double Rare,0.8,2026-03-04 05:17:34
+3,24073,623470,Holofoil,Pokemon,SV09: Journey Together,43,Veluza ex,Holofoil,Double Rare,0.68,2026-03-04 05:17:34
+3,24073,623480,Holofoil,Pokemon,SV09: Journey Together,53,Iono's Bellibolt ex,Holofoil,Double Rare,0.69,2026-03-04 05:17:34
+3,24073,623591,Holofoil,Pokemon,SV09: Journey Together,164,Lillie's Ribombee,Holofoil,Illustration Rare,5.02,2026-03-04 05:17:34
+3,24073,623525,Holofoil,Pokemon,SV09: Journey Together,98,N's Zoroark ex,Holofoil,Double Rare,2.15,2026-03-04 05:17:34
+3,24073,623483,Holofoil,Pokemon,SV09: Journey Together,56,Lillie's Clefairy ex,Holofoil,Double Rare,1.56,2026-03-04 05:17:34
+3,24073,623593,Holofoil,Pokemon,SV09: Journey Together,166,Lycanroc,Holofoil,Illustration Rare,2.3,2026-03-04 05:17:34
+3,24073,623478,Holofoil,Pokemon,SV09: Journey Together,51,Tapu Koko ex,Holofoil,Double Rare,0.64,2026-03-04 05:17:34
+3,24073,623588,Holofoil,Pokemon,SV09: Journey Together,161,Articuno,Holofoil,Illustration Rare,17.92,2026-03-04 05:17:34
+3,24073,623541,Holofoil,Pokemon,SV09: Journey Together,114,Salamence ex,Holofoil,Double Rare,0.91,2026-03-04 05:17:34
+3,24073,623602,Holofoil,Pokemon,SV09: Journey Together,175,N's Zoroark ex,Holofoil,Ultra Rare,6.24,2026-03-04 05:17:34
+3,24073,623438,Holofoil,Pokemon,SV09: Journey Together,11,Amoonguss ex,Holofoil,Double Rare,0.68,2026-03-04 05:17:34
+3,24073,623595,Holofoil,Pokemon,SV09: Journey Together,168,Furret,Holofoil,Illustration Rare,5.25,2026-03-04 05:17:34
+3,24073,623604,Holofoil,Pokemon,SV09: Journey Together,177,Salamence ex,Holofoil,Ultra Rare,2.3,2026-03-04 05:17:34
+3,24073,623445,holofoil,Pokemon,SV09: Journey Together,18,Meowscarada,holofoil,Rare,0.23,2026-03-04 05:17:34
+3,24073,623522,holofoil,Pokemon,SV09: Journey Together,95,Tyranitar,holofoil,Rare,0.26,2026-03-04 05:17:34
+3,24073,623482,holofoil,Pokemon,SV09: Journey Together,55,Iono's Kilowattrel,holofoil,Rare,0.15,2026-03-04 05:17:34
+3,24073,623534,holofoil,Pokemon,SV09: Journey Together,107,Magearna,holofoil,Rare,0.14,2026-03-04 05:17:34
+3,24073,623464,holofoil,Pokemon,SV09: Journey Together,37,Ludicolo,holofoil,Rare,0.12,2026-03-04 05:17:34
+3,24073,623464,holofoil,Pokemon,SV09: Journey Together,37,Ludicolo,holofoil,Rare,0.12,2026-03-04 05:17:34
+3,24073,623445,holofoil,Pokemon,SV09: Journey Together,18,Meowscarada,holofoil,Rare,0.23,2026-03-04 05:17:34
+3,24073,623448,holofoil,Pokemon,SV09: Journey Together,21,Magmortar,holofoil,Rare,0.16,2026-03-04 05:17:34
+3,24073,623543,holofoil,Pokemon,SV09: Journey Together,116,N's Reshiram,holofoil,Rare,0.24,2026-03-04 05:17:34
+3,24073,623534,holofoil,Pokemon,SV09: Journey Together,107,Magearna,holofoil,Rare,0.14,2026-03-04 05:17:34
+3,24073,623544,holofoil,Pokemon,SV09: Journey Together,117,Hop's Snorlax,holofoil,Rare,0.23,2026-03-04 05:17:34
+3,24073,623494,holofoil,Pokemon,SV09: Journey Together,67,Lillie's Ribombee,holofoil,Rare,0.21,2026-03-04 05:17:34
+3,24073,623490,holofoil,Pokemon,SV09: Journey Together,63,Metagross,holofoil,Rare,0.13,2026-03-04 05:17:34
+3,24073,623512,holofoil,Pokemon,SV09: Journey Together,85,Lycanroc,holofoil,Rare,0.2,2026-03-04 05:17:34
+3,24073,623494,holofoil,Pokemon,SV09: Journey Together,67,Lillie's Ribombee,holofoil,Rare,0.21,2026-03-04 05:17:34
+3,24073,623555,holofoil,Pokemon,SV09: Journey Together,128,Noivern,holofoil,Rare,0.16,2026-03-04 05:17:34
+3,24073,623563,holofoil,Pokemon,SV09: Journey Together,136,Hop's Dubwool,holofoil,Rare,0.15,2026-03-04 05:17:34
+3,24073,623430,holofoil,Pokemon,SV09: Journey Together,3,Butterfree,holofoil,Rare,0.18,2026-03-04 05:17:34
+3,24073,623522,holofoil,Pokemon,SV09: Journey Together,95,Tyranitar,holofoil,Rare,0.26,2026-03-04 05:17:34
+3,24073,623468,holofoil,Pokemon,SV09: Journey Together,41,Wailord,holofoil,Rare,0.16,2026-03-04 05:17:34
+3,24073,623555,holofoil,Pokemon,SV09: Journey Together,128,Noivern,holofoil,Rare,0.16,2026-03-04 05:17:34
+3,24073,623544,holofoil,Pokemon,SV09: Journey Together,117,Hop's Snorlax,holofoil,Rare,0.23,2026-03-04 05:17:34
+3,24073,623468,holofoil,Pokemon,SV09: Journey Together,41,Wailord,holofoil,Rare,0.16,2026-03-04 05:17:34
+3,24073,623430,holofoil,Pokemon,SV09: Journey Together,3,Butterfree,holofoil,Rare,0.18,2026-03-04 05:17:34
+3,24073,623522,holofoil,Pokemon,SV09: Journey Together,95,Tyranitar,holofoil,Rare,0.26,2026-03-04 05:17:34
+3,24073,623509,holofoil,Pokemon,SV09: Journey Together,82,Regirock,holofoil,Rare,0.17,2026-03-04 05:17:34
+3,24073,623490,reverse holofoil,Pokemon,SV09: Journey Together,63,Metagross,reverse holofoil,Rare,0.32,2026-03-04 05:17:34
+3,24073,623448,reverse holofoil,Pokemon,SV09: Journey Together,21,Magmortar,reverse holofoil,Rare,0.31,2026-03-04 05:17:34
+3,24073,623430,reverse holofoil,Pokemon,SV09: Journey Together,3,Butterfree,reverse holofoil,Rare,0.33,2026-03-04 05:17:34
+3,24073,623543,reverse holofoil,Pokemon,SV09: Journey Together,116,N's Reshiram,reverse holofoil,Rare,0.46,2026-03-04 05:17:34
+3,24073,623494,reverse holofoil,Pokemon,SV09: Journey Together,67,Lillie's Ribombee,reverse holofoil,Rare,0.32,2026-03-04 05:17:34
+3,24073,623544,reverse holofoil,Pokemon,SV09: Journey Together,117,Hop's Snorlax,reverse holofoil,Rare,0.43,2026-03-04 05:17:34
+3,24073,623512,reverse holofoil,Pokemon,SV09: Journey Together,85,Lycanroc,reverse holofoil,Rare,0.53,2026-03-04 05:17:34
+3,24073,623482,reverse holofoil,Pokemon,SV09: Journey Together,55,Iono's Kilowattrel,reverse holofoil,Rare,0.31,2026-03-04 05:17:34
+3,24073,623555,reverse holofoil,Pokemon,SV09: Journey Together,128,Noivern,reverse holofoil,Rare,0.31,2026-03-04 05:17:34
+3,24073,623520,reverse holofoil,Pokemon,SV09: Journey Together,93,Paldean Wooper,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623529,reverse holofoil,Pokemon,SV09: Journey Together,102,Escavalier,reverse holofoil,Uncommon,0.18,2026-03-04 05:17:34
+3,24073,623568,reverse holofoil,Pokemon,SV09: Journey Together,141,Squawkabilly,reverse holofoil,Common,0.19,2026-03-04 05:17:34
+3,24073,623549,reverse holofoil,Pokemon,SV09: Journey Together,122,Kecleon,reverse holofoil,Common,0.2,2026-03-04 05:17:34
+3,24073,623434,reverse holofoil,Pokemon,SV09: Journey Together,7,Lilligant,reverse holofoil,Common,0.24,2026-03-04 05:17:34
+3,24073,623497,reverse holofoil,Pokemon,SV09: Journey Together,70,Dhelmise,reverse holofoil,Common,0.25,2026-03-04 05:17:34
+3,24073,623471,reverse holofoil,Pokemon,SV09: Journey Together,44,Alolan Geodude,reverse holofoil,Common,0.27,2026-03-04 05:17:34
+3,24073,623459,reverse holofoil,Pokemon,SV09: Journey Together,32,Articuno,reverse holofoil,Uncommon,0.4,2026-03-04 05:17:34
+3,24073,623431,reverse holofoil,Pokemon,SV09: Journey Together,4,Paras,reverse holofoil,Common,0.21,2026-03-04 05:17:34
+3,24073,623558,reverse holofoil,Pokemon,SV09: Journey Together,131,Skwovet,reverse holofoil,Common,0.23,2026-03-04 05:17:34
+3,24073,623552,reverse holofoil,Pokemon,SV09: Journey Together,125,Minccino,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623572,reverse holofoil,Pokemon,SV09: Journey Together,145,Black Belt's Training,reverse holofoil,Common,0.28,2026-03-04 05:17:34
+3,24073,623462,reverse holofoil,Pokemon,SV09: Journey Together,35,Lotad,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623479,reverse holofoil,Pokemon,SV09: Journey Together,52,Iono's Tadbulb,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623489,reverse holofoil,Pokemon,SV09: Journey Together,62,Metang,reverse holofoil,Common,0.2,2026-03-04 05:17:34
+3,24073,623577,reverse holofoil,Pokemon,SV09: Journey Together,150,Levincia,reverse holofoil,Uncommon,0.25,2026-03-04 05:17:34
+3,24073,623436,reverse holofoil,Pokemon,SV09: Journey Together,9,Karrablast,reverse holofoil,Common,0.21,2026-03-04 05:17:34
+3,24073,623501,reverse holofoil,Pokemon,SV09: Journey Together,74,Milcery,reverse holofoil,Common,0.21,2026-03-04 05:17:34
+3,24073,623530,reverse holofoil,Pokemon,SV09: Journey Together,103,N's Klink,reverse holofoil,Common,0.25,2026-03-04 05:17:34
+3,24073,623474,reverse holofoil,Pokemon,SV09: Journey Together,47,Iono's Voltorb,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623583,reverse holofoil,Pokemon,SV09: Journey Together,156,Redeemable Ticket,reverse holofoil,Uncommon,0.37,2026-03-04 05:17:34
+3,24073,623574,reverse holofoil,Pokemon,SV09: Journey Together,147,Hop's Bag,reverse holofoil,Uncommon,0.21,2026-03-04 05:17:34
+3,24073,623450,reverse holofoil,Pokemon,SV09: Journey Together,23,Combusken,reverse holofoil,Uncommon,0.19,2026-03-04 05:17:34
+3,24073,623519,reverse holofoil,Pokemon,SV09: Journey Together,92,Weezing,reverse holofoil,Uncommon,0.34,2026-03-04 05:17:34
+3,24073,623510,reverse holofoil,Pokemon,SV09: Journey Together,83,Pancham,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623562,reverse holofoil,Pokemon,SV09: Journey Together,135,Hop's Wooloo,reverse holofoil,Common,0.23,2026-03-04 05:17:34
+3,24073,623454,reverse holofoil,Pokemon,SV09: Journey Together,27,N's Darmanitan,reverse holofoil,Uncommon,0.33,2026-03-04 05:17:34
+3,24073,623585,reverse holofoil,Pokemon,SV09: Journey Together,158,Super Potion,reverse holofoil,Uncommon,0.29,2026-03-04 05:17:34
+3,24073,623499,reverse holofoil,Pokemon,SV09: Journey Together,72,Morgrem,reverse holofoil,Common,0.19,2026-03-04 05:17:34
+3,24073,623551,reverse holofoil,Pokemon,SV09: Journey Together,124,Audino,reverse holofoil,Common,0.16,2026-03-04 05:17:34
+3,24073,623476,reverse holofoil,Pokemon,SV09: Journey Together,49,N's Joltik,reverse holofoil,Common,0.25,2026-03-04 05:17:34
+3,24073,623542,reverse holofoil,Pokemon,SV09: Journey Together,115,Druddigon,reverse holofoil,Common,0.2,2026-03-04 05:17:34
+3,24073,623463,reverse holofoil,Pokemon,SV09: Journey Together,36,Lombre,reverse holofoil,Common,0.17,2026-03-04 05:17:34
+3,24073,623503,reverse holofoil,Pokemon,SV09: Journey Together,76,Cubone,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623586,reverse holofoil,Pokemon,SV09: Journey Together,159,Spiky Energy,reverse holofoil,Uncommon,0.32,2026-03-04 05:17:34
+3,24073,623428,reverse holofoil,Pokemon,SV09: Journey Together,1,Caterpie,reverse holofoil,Common,0.16,2026-03-04 05:17:34
+3,24073,623565,reverse holofoil,Pokemon,SV09: Journey Together,138,Hop's Cramorant,reverse holofoil,Uncommon,0.23,2026-03-04 05:17:34
+3,24073,623566,reverse holofoil,Pokemon,SV09: Journey Together,139,Lechonk,reverse holofoil,Common,0.19,2026-03-04 05:17:34
+3,24073,623533,reverse holofoil,Pokemon,SV09: Journey Together,106,Galarian Stunfisk,reverse holofoil,Common,0.18,2026-03-04 05:17:34
+3,24073,623453,reverse holofoil,Pokemon,SV09: Journey Together,26,N's Darumaka,reverse holofoil,Common,0.23,2026-03-04 05:17:34
+3,24073,623516,reverse holofoil,Pokemon,SV09: Journey Together,89,Toedscruel,reverse holofoil,Uncommon,0.33,2026-03-04 05:17:34
+3,24073,623498,reverse holofoil,Pokemon,SV09: Journey Together,71,Impidimp,reverse holofoil,Common,0.16,2026-03-04 05:17:34
+3,24073,623576,reverse holofoil,Pokemon,SV09: Journey Together,149,Iris's Fighting Spirit,reverse holofoil,Uncommon,0.22,2026-03-04 05:17:34
+3,24073,623540,reverse holofoil,Pokemon,SV09: Journey Together,113,Shelgon,reverse holofoil,Common,0.21,2026-03-04 05:17:34
+3,24073,623513,reverse holofoil,Pokemon,SV09: Journey Together,86,Hop's Silicobra,reverse holofoil,Common,0.17,2026-03-04 05:17:34
+3,24073,623531,reverse holofoil,Pokemon,SV09: Journey Together,104,N's Klang,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623442,reverse holofoil,Pokemon,SV09: Journey Together,15,Virizion,reverse holofoil,Uncommon,0.36,2026-03-04 05:17:34
+3,24073,623491,reverse holofoil,Pokemon,SV09: Journey Together,64,N's Sigilyph,reverse holofoil,Common,0.2,2026-03-04 05:17:34
+3,24073,623546,reverse holofoil,Pokemon,SV09: Journey Together,119,Furret,reverse holofoil,Common,0.19,2026-03-04 05:17:34
+3,24073,623447,reverse holofoil,Pokemon,SV09: Journey Together,20,Magmar,reverse holofoil,Common,0.18,2026-03-04 05:17:34
+3,24073,623554,reverse holofoil,Pokemon,SV09: Journey Together,127,Noibat,reverse holofoil,Common,0.2,2026-03-04 05:17:34
+3,24073,623564,reverse holofoil,Pokemon,SV09: Journey Together,137,Cramorant,reverse holofoil,Common,0.23,2026-03-04 05:17:34
+3,24073,623485,reverse holofoil,Pokemon,SV09: Journey Together,58,Mr. Mime,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623432,reverse holofoil,Pokemon,SV09: Journey Together,5,Parasect,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623452,reverse holofoil,Pokemon,SV09: Journey Together,25,Torkoal,reverse holofoil,Common,0.21,2026-03-04 05:17:34
+3,24073,623575,reverse holofoil,Pokemon,SV09: Journey Together,148,Hop's Choice Band,reverse holofoil,Uncommon,0.21,2026-03-04 05:17:34
+3,24073,623505,reverse holofoil,Pokemon,SV09: Journey Together,78,Piloswine,reverse holofoil,Common,0.22,2026-03-04 05:17:34
+3,24073,623519,reverse holofoil,Pokemon,SV09: Journey Together,92,Weezing,reverse holofoil,Uncommon,0.34,2026-03-04 05:17:34
+3,24073,623435,reverse holofoil,Pokemon,SV09: Journey Together,8,Maractus,reverse holofoil,Uncommon,0.27,2026-03-04 05:17:34
+3,2374,623594,Holofoil,Pokemon,Miscellaneous Cards & Products,167,N's Reshiram,"Journey Together Stamped,Holofoil",Illustration Rare,18.32,2026-03-04 05:17:35
+89,24519,666473,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,177,Azir - Sovereign,Foil,Epic,6.22,2026-03-04 05:17:36
+89,24519,664921,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,184,Relentless Pursuit,Foil,Epic,7.16,2026-03-04 05:17:36
+89,24519,666812,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,198,Arise!,Foil,Epic,22.53,2026-03-04 05:17:36
+89,24519,665011,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,119,Jax - Unrelenting,Foil,Epic,2.72,2026-03-04 05:17:36
+89,24519,666493,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,29,Rek'Sai - Breacher,Foil,Epic,4.75,2026-03-04 05:17:36
+89,24519,666825,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,149,Ezreal - Prodigy,Foil,Epic,57.12,2026-03-04 05:17:36
+89,24519,665028,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,148a,Draven - Audacious,"Alternate Art,Foil",Showcase,19.4,2026-03-04 05:17:36
+89,24519,678229,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,r03a,Mind Rune,"Alternate Art,Foil",Showcase,10.27,2026-03-04 05:17:36
+89,24519,666788,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,224,Aphelios - Exalted,"Overnumbered,Foil",Showcase,98.43,2026-03-04 05:17:36
+89,24519,666461,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,85a,Ornn - Forge God,"Alternate Art,Foil",Showcase,5.48,2026-03-04 05:17:36
+89,24519,666476,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,171a,Renata Glasc - Industrialist,"Alternate Art,Foil",Showcase,2.35,2026-03-04 05:17:36
+89,24519,663430,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,115,Trinity Force,Foil,Rare,0.48,2026-03-04 05:17:36
+89,24519,665487,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,82,Ezreal - Dashing,Foil,Rare,0.18,2026-03-04 05:17:36
+89,24519,663442,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,185,Draven - Glorious Executioner,Foil,Rare,0.2,2026-03-04 05:17:36
+89,24519,666398,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,50,Azir - Ascendant,Foil,Rare,0.27,2026-03-04 05:17:36
+89,24519,666487,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,172,Sacred Shears,Foil,Rare,0.3,2026-03-04 05:17:36
+89,24519,666585,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,53,Janna - Savior,Foil,Rare,0.32,2026-03-04 05:17:36
+89,24519,665486,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,146,Vex - Cheerless,Foil,Rare,1.77,2026-03-04 05:17:36
+89,24519,664927,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,199,Ezreal - Prodigal Explorer,Foil,Rare,0.15,2026-03-04 05:17:36
+89,24519,663445,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,20,Draven - Vanquisher,Foil,Rare,0.48,2026-03-04 05:17:36
+89,24519,666588,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,83,Hextech Anomaly,Foil,Rare,0.24,2026-03-04 05:17:36
+89,24519,663438,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,203,Sivir - Battle Mistress,Foil,Rare,0.13,2026-03-04 05:17:36
+89,24519,664920,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,183,Lucian - Purifier,Foil,Rare,0.12,2026-03-04 05:17:36
+89,24519,666365,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,25,Rengar - Pouncing,Foil,Rare,0.44,2026-03-04 05:17:36
+89,24519,665031,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,170,Rek'Sai - Swarm Queen,Foil,Rare,0.17,2026-03-04 05:17:36
+89,24519,664925,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,193,Jax - Grandmaster At Arms,Foil,Rare,0.19,2026-03-04 05:17:36
+89,24519,666847,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,52,Heart of Dark Ice,Foil,Rare,0.31,2026-03-04 05:17:36
+89,24519,664924,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,189,Ornn - Fire Below the Mountain,Foil,Rare,0.15,2026-03-04 05:17:36
+89,24519,665143,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,49,Aphelios - Exalted,Foil,Rare,0.4,2026-03-04 05:17:36
+89,24519,666488,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,142,Jae Medarda,Foil,Rare,0.15,2026-03-04 05:17:36
+89,24519,665023,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,145,Switcheroo,Foil,Rare,0.56,2026-03-04 05:17:36
+89,24519,664966,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,169,Altar of Memories,Foil,Rare,0.18,2026-03-04 05:17:36
+89,24519,666486,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,173,Soraka - Wanderer,Foil,Rare,0.3,2026-03-04 05:17:36
+89,24519,666598,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,139,Edge of Night,Foil,Rare,0.32,2026-03-04 05:17:36
+89,24519,666410,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,55,Needlessly Large Yordle,Foil,Rare,0.17,2026-03-04 05:17:36
+89,24519,666490,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,114,Marching Orders,Foil,Rare,0.22,2026-03-04 05:17:36
+89,24519,663434,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,56,Sterak's Gage,Foil,Rare,0.26,2026-03-04 05:17:36
+89,24519,666813,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,26,Rumble - Hotheaded,Foil,Rare,0.17,2026-03-04 05:17:36
+89,24519,666459,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,85,Ornn - Forge God,Foil,Rare,0.36,2026-03-04 05:17:36
+89,24519,663444,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,113,Lucian - Merciless,Foil,Rare,0.35,2026-03-04 05:17:36
+89,24519,666489,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,140,Fizz - Trickster,Foil,Rare,1.61,2026-03-04 05:17:36
+89,24519,666587,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,81,Card Sharp,Foil,Rare,0.38,2026-03-04 05:17:36
+89,24519,665012,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,23,Piercing Light,Foil,Rare,0.66,2026-03-04 05:17:36
+89,24519,663435,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,51,Guardian Angel,Foil,Rare,2.81,2026-03-04 05:17:36
+89,24519,664972,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,116,Yone - Blademaster,Foil,Rare,0.23,2026-03-04 05:17:36
+89,24519,663439,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,201,Renata Glasc - Chem-Baroness,Foil,Rare,0.14,2026-03-04 05:17:36
+89,24519,664922,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,187,Rek'sai - Void Burrower,Foil,Rare,0.1,2026-03-04 05:17:36
+89,24519,666484,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,175,Undertitan,Foil,Rare,0.26,2026-03-04 05:17:36
+89,24519,666442,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,79,Bard - Mercurial,Foil,Rare,0.26,2026-03-04 05:17:36
+89,24519,666594,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,110,Fiora - Peerless,Foil,Rare,0.2,2026-03-04 05:17:36
+89,24519,665013,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,24,Rell - Magnetic,Foil,Rare,0.25,2026-03-04 05:17:36
+89,24519,666888,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,109,Akshan - Mischievous,Foil,Rare,1.38,2026-03-04 05:17:36
+89,24519,666485,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,174,Trove Golem,Foil,Rare,0.21,2026-03-04 05:17:36
+89,24519,666454,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,84,Jayce - Man of Progress,Foil,Rare,0.56,2026-03-04 05:17:36
+89,24519,663436,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,22,Long Sword,Foil,Rare,0.34,2026-03-04 05:17:36
+89,24519,666600,Foil,Riftbound League of Legends Trading Card Game,Spiritforged,143,Sivir - Mercenary,Foil,Rare,0.22,2026-03-04 05:17:36
+3,24541,675843,Holofoil,Pokemon,ME: Ascended Heroes,31,Mega Emboar ex,Holofoil,Double Rare,1.35,2026-03-04 05:17:37
+3,24541,675951,Holofoil,Pokemon,ME: Ascended Heroes,139,Mandibuzz ex,Holofoil,Double Rare,0.97,2026-03-04 05:17:37
+3,24541,675934,Holofoil,Pokemon,ME: Ascended Heroes,122,Okidogi,Holofoil,Rare,0.16,2026-03-04 05:17:37
+3,24541,675990,Holofoil,Pokemon,ME: Ascended Heroes,178,Terapagos,Holofoil,Rare,0.19,2026-03-04 05:17:37
+3,24541,675898,Holofoil,Pokemon,ME: Ascended Heroes,86,Mismagius,Holofoil,Rare,0.21,2026-03-04 05:17:37
+3,24541,675879,Holofoil,Pokemon,ME: Ascended Heroes,67,Tapu Koko,Holofoil,Rare,0.13,2026-03-04 05:17:37
+3,24541,675953,Holofoil,Pokemon,ME: Ascended Heroes,141,Hoopa,Holofoil,Rare,0.15,2026-03-04 05:17:37
+3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.16,2026-03-04 05:17:37
+3,24541,676913,Reverse Holofoil,Pokemon,ME: Ascended Heroes,78,Team Rocket's exeggutor,"Team Rocket,Reverse Holofoil",Rare,0.42,2026-03-04 05:17:37
+3,24541,676964,Reverse Holofoil,Pokemon,ME: Ascended Heroes,143,Pecharunt,"Poke Ball,Reverse Holofoil",Rare,0.67,2026-03-04 05:17:37
+3,24541,676083,Holofoil,Pokemon,ME: Ascended Heroes,271,Mega Dragonite ex,Holofoil,Mega Attack Rare,48.71,2026-03-04 05:17:37
+3,24451,680480,Holofoil,Pokemon,ME: Mega Evolution Promo,31,N's Zekrom,Holofoil,Promo,6.52,2026-03-04 05:17:38
+3,24541,675998,Reverse Holofoil,Pokemon,ME: Ascended Heroes,186,Counter Gain,Reverse Holofoil,Common,0.25,2026-03-04 05:17:37
+3,24541,676003,Reverse Holofoil,Pokemon,ME: Ascended Heroes,191,Light Ball,Reverse Holofoil,Uncommon,2.53,2026-03-04 05:17:37
+3,24541,676021,Reverse Holofoil,Pokemon,ME: Ascended Heroes,209,Team Rocket's Transceiver,Reverse Holofoil,Uncommon,0.36,2026-03-04 05:17:37
+3,24541,676970,Reverse Holofoil,Pokemon,ME: Ascended Heroes,151,Dragonair,"Love Ball,Reverse Holofoil",Uncommon,0.47,2026-03-04 05:17:37
+3,24541,676993,Reverse Holofoil,Pokemon,ME: Ascended Heroes,2,Erika's Gloom,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.27,2026-03-04 05:17:37
+3,24541,676949,Reverse Holofoil,Pokemon,ME: Ascended Heroes,123,Gastly,"Dusk Ball,Reverse Holofoil",Common,0.49,2026-03-04 05:17:37
+3,24541,677086,Reverse Holofoil,Pokemon,ME: Ascended Heroes,119,Carkol,"Energy Symbol Pattern,Reverse Holofoil",Common,0.39,2026-03-04 05:17:37
+3,24541,677129,Reverse Holofoil,Pokemon,ME: Ascended Heroes,176,Drampa,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.3,2026-03-04 05:17:37
+3,24541,676905,Reverse Holofoil,Pokemon,ME: Ascended Heroes,66,Vikavolt,"Quick Ball,Reverse Holofoil",Uncommon,0.27,2026-03-04 05:17:37
+3,24541,676926,Reverse Holofoil,Pokemon,ME: Ascended Heroes,94,Slurpuff,"Love Ball,Reverse Holofoil",Uncommon,0.49,2026-03-04 05:17:37
+3,24541,677026,Reverse Holofoil,Pokemon,ME: Ascended Heroes,41,Totodile,"Energy Symbol Pattern,Reverse Holofoil",Common,0.22,2026-03-04 05:17:37
+3,24541,676859,Reverse Holofoil,Pokemon,ME: Ascended Heroes,9,Bayleef,"Friend Ball,Reverse Holofoil",Uncommon,0.44,2026-03-04 05:17:37
+3,24541,677099,Reverse Holofoil,Pokemon,ME: Ascended Heroes,134,Scraggy,"Energy Symbol Pattern,Reverse Holofoil",Common,0.34,2026-03-04 05:17:37
+3,24541,676892,Reverse Holofoil,Pokemon,ME: Ascended Heroes,50,N's Vanillish,"Poke Ball,Reverse Holofoil",Common,0.29,2026-03-04 05:17:37
+3,24541,676978,Reverse Holofoil,Pokemon,ME: Ascended Heroes,161,Team Rocket's Meowth,"Team Rocket,Reverse Holofoil",Common,0.28,2026-03-04 05:17:37
+3,24541,675934,Holofoil,Pokemon,ME: Ascended Heroes,122,Okidogi,Holofoil,Rare,0.16,2026-03-04 05:17:37
+3,24541,675990,Holofoil,Pokemon,ME: Ascended Heroes,178,Terapagos,Holofoil,Rare,0.19,2026-03-04 05:17:37
+3,24541,675898,Holofoil,Pokemon,ME: Ascended Heroes,86,Mismagius,Holofoil,Rare,0.21,2026-03-04 05:17:37
+3,24541,675932,Holofoil,Pokemon,ME: Ascended Heroes,120,Coalossal,Holofoil,Rare,0.15,2026-03-04 05:17:37
+3,24541,675898,Holofoil,Pokemon,ME: Ascended Heroes,86,Mismagius,Holofoil,Rare,0.21,2026-03-04 05:17:37
+3,24541,675911,Holofoil,Pokemon,ME: Ascended Heroes,99,Munkidori,Holofoil,Rare,0.21,2026-03-04 05:17:37
+3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.16,2026-03-04 05:17:37
+3,24541,675818,Holofoil,Pokemon,ME: Ascended Heroes,6,Erika's Victreebel,Holofoil,Rare,0.16,2026-03-04 05:17:37
+3,24541,676939,Reverse Holofoil,Pokemon,ME: Ascended Heroes,108,Groudon,"Dusk Ball,Reverse Holofoil",Rare,0.21,2026-03-04 05:17:37
+3,24541,676906,Reverse Holofoil,Pokemon,ME: Ascended Heroes,67,Tapu Koko,"Quick Ball,Reverse Holofoil",Rare,0.28,2026-03-04 05:17:37
+3,24541,677053,Reverse Holofoil,Pokemon,ME: Ascended Heroes,78,Team Rocket's exeggutor,"Energy Symbol Pattern,Reverse Holofoil",Rare,0.31,2026-03-04 05:17:37
+3,24541,675888,Holofoil,Pokemon,ME: Ascended Heroes,76,Lillie's Clefairy ex,Holofoil,Double Rare,0.95,2026-03-04 05:17:37
+3,24541,676072,Holofoil,Pokemon,ME: Ascended Heroes,260,Glass Trumpet,Holofoil,Ultra Rare,1.61,2026-03-04 05:17:37
+3,24541,676041,Holofoil,Pokemon,ME: Ascended Heroes,229,Heliolisk,Holofoil,Illustration Rare,3.3,2026-03-04 05:17:37
+3,24541,676065,Holofoil,Pokemon,ME: Ascended Heroes,253,Mega Audino ex,Holofoil,Ultra Rare,3.95,2026-03-04 05:17:37
+3,24541,675855,Holofoil,Pokemon,ME: Ascended Heroes,43,Mega Feraligatr ex,Holofoil,Double Rare,5.4,2026-03-04 05:17:37
+3,24451,680480,Holofoil,Pokemon,ME: Mega Evolution Promo,31,N's Zekrom,Holofoil,Promo,6.52,2026-03-04 05:17:38
+3,2374,677399,Holofoil,Pokemon,Miscellaneous Cards & Products,123,Gastly,"Cosmos Holo,Holofoil",Common,0.23,2026-03-04 05:17:35
+3,24541,677031,Reverse Holofoil,Pokemon,ME: Ascended Heroes,49,N's Vanillite,"Energy Symbol Pattern,Reverse Holofoil",Common,0.2,2026-03-04 05:17:37
+3,24541,677026,Reverse Holofoil,Pokemon,ME: Ascended Heroes,41,Totodile,"Energy Symbol Pattern,Reverse Holofoil",Common,0.22,2026-03-04 05:17:37
+3,24541,676895,Reverse Holofoil,Pokemon,ME: Ascended Heroes,53,Frosmoth,"Friend Ball,Reverse Holofoil",Uncommon,0.25,2026-03-04 05:17:37
+3,24541,676934,Reverse Holofoil,Pokemon,ME: Ascended Heroes,102,Hitmontop,"Dusk Ball,Reverse Holofoil",Common,0.27,2026-03-04 05:17:37
+3,24541,676858,Reverse Holofoil,Pokemon,ME: Ascended Heroes,8,Chikorita,"Friend Ball,Reverse Holofoil",Common,0.25,2026-03-04 05:17:37
+3,24541,676857,Reverse Holofoil,Pokemon,ME: Ascended Heroes,7,Erika's Tangela,"Poke Ball,Reverse Holofoil",Common,0.25,2026-03-04 05:17:37
+3,24541,676883,Reverse Holofoil,Pokemon,ME: Ascended Heroes,37,Raboot,"Friend Ball,Reverse Holofoil",Common,0.27,2026-03-04 05:17:37
+3,24541,677062,Reverse Holofoil,Pokemon,ME: Ascended Heroes,90,Shuppet,"Energy Symbol Pattern,Reverse Holofoil",Common,0.25,2026-03-04 05:17:37
+3,24541,676890,Reverse Holofoil,Pokemon,ME: Ascended Heroes,46,Snorunt,"Love Ball,Reverse Holofoil",Common,0.3,2026-03-04 05:17:37
+3,24541,677129,Reverse Holofoil,Pokemon,ME: Ascended Heroes,176,Drampa,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.3,2026-03-04 05:17:37
+3,24541,677129,Reverse Holofoil,Pokemon,ME: Ascended Heroes,176,Drampa,"Energy Symbol Pattern,Reverse Holofoil",Uncommon,0.3,2026-03-04 05:17:37
+3,24541,677089,Reverse Holofoil,Pokemon,ME: Ascended Heroes,123,Gastly,"Energy Symbol Pattern,Reverse Holofoil",Common,0.31,2026-03-04 05:17:37
+3,24541,676007,Reverse Holofoil,Pokemon,ME: Ascended Heroes,195,N's PP Up,Reverse Holofoil,Uncommon,0.32,2026-03-04 05:17:37
+3,24541,676863,Reverse Holofoil,Pokemon,ME: Ascended Heroes,14,Cascoon,"Love Ball,Reverse Holofoil",Common,0.34,2026-03-04 05:17:37
+3,24541,676866,Reverse Holofoil,Pokemon,ME: Ascended Heroes,17,Grubbin,"Quick Ball,Reverse Holofoil",Common,0.32,2026-03-04 05:17:37
+3,24541,677099,Reverse Holofoil,Pokemon,ME: Ascended Heroes,134,Scraggy,"Energy Symbol Pattern,Reverse Holofoil",Common,0.34,2026-03-04 05:17:37
+3,24541,676900,Reverse Holofoil,Pokemon,ME: Ascended Heroes,60,Eelektrik,"Quick Ball,Reverse Holofoil",Uncommon,0.32,2026-03-04 05:17:37
+3,24541,676023,Reverse Holofoil,Pokemon,ME: Ascended Heroes,211,Thick Scale,Reverse Holofoil,Uncommon,0.82,2026-03-04 05:17:37
+3,24541,676878,Reverse Holofoil,Pokemon,ME: Ascended Heroes,32,N's Darumaka,"Poke Ball,Reverse Holofoil",Common,1.47,2026-03-04 05:17:37
+3,24541,676003,Reverse Holofoil,Pokemon,ME: Ascended Heroes,191,Light Ball,Reverse Holofoil,Uncommon,2.53,2026-03-04 05:17:37
+3,24541,675836,Holofoil,Pokemon,ME: Ascended Heroes,24,Ethan's Magcargo,Holofoil,Rare,0.12,2026-03-04 05:17:37
+3,24541,675837,Holofoil,Pokemon,ME: Ascended Heroes,25,Entei,Holofoil,Rare,0.14,2026-03-04 05:17:37
+3,24541,675934,Holofoil,Pokemon,ME: Ascended Heroes,122,Okidogi,Holofoil,Rare,0.16,2026-03-04 05:17:37
+3,24541,675910,Holofoil,Pokemon,ME: Ascended Heroes,98,Spectrier,Holofoil,Rare,0.23,2026-03-04 05:17:37
+3,24541,676948,Reverse Holofoil,Pokemon,ME: Ascended Heroes,122,Okidogi,"Friend Ball,Reverse Holofoil",Rare,0.24,2026-03-04 05:17:37
+3,24541,676901,Reverse Holofoil,Pokemon,ME: Ascended Heroes,62,Stunfisk,"Quick Ball,Reverse Holofoil",Common,0.28,2026-03-04 05:17:37
+3,24541,676935,Reverse Holofoil,Pokemon,ME: Ascended Heroes,103,Meditite,"Quick Ball,Reverse Holofoil",Common,0.28,2026-03-04 05:17:37
+3,24541,677089,Reverse Holofoil,Pokemon,ME: Ascended Heroes,123,Gastly,"Energy Symbol Pattern,Reverse Holofoil",Common,0.31,2026-03-04 05:17:37
+3,24541,677030,Reverse Holofoil,Pokemon,ME: Ascended Heroes,46,Snorunt,"Energy Symbol Pattern,Reverse Holofoil",Common,0.34,2026-03-04 05:17:37
+3,24541,676015,Reverse Holofoil,Pokemon,ME: Ascended Heroes,203,Team Rocket's Factory,Reverse Holofoil,Uncommon,1.39,2026-03-04 05:17:37
+3,24541,676043,Holofoil,Pokemon,ME: Ascended Heroes,231,Iono's Wattrel,Holofoil,Illustration Rare,13.52,2026-03-04 05:17:37
+3,24541,676060,Holofoil,Pokemon,ME: Ascended Heroes,248,Drakloak,Holofoil,Illustration Rare,19.46,2026-03-04 05:17:37

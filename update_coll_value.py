@@ -14,7 +14,7 @@ def main():
 		card, _, subtype = parse_row(row)
 
 		price = card.price(var=subtype)
-		price_updated = ll.ctime(f'data/prices/{cat_id}/{group_id}.json')
+		price_updated = ll.ctime(f'data/prices/{card.category_id}/{card.group_id}.json')
 
 		# Update row
 		row['value'] = price
