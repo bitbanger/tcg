@@ -207,6 +207,8 @@ class Card:
 		vsstr = ' '.join(sorted(f'({v})' for v in vs))
 		n, nm = (spl:=s.split('#'))[0].strip(), spl[1].strip()
 
+		for v in vs:
+			n = n.replace(f' ({v})', '')
 
 		pstr = f'[{pcol}]${price:.02f}[/{pcol}]'
 
