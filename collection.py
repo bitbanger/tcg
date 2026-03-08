@@ -30,6 +30,10 @@ def main():
 
 	for card in cards:
 		print(card.fmt())
+		if ll.arg('-i', '--images', action='store_true'):
+			print('')
+			print(card.image())
+			print('')
 
 	print(f'\n{len(cards)} cards')
 
