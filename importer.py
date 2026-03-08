@@ -94,6 +94,12 @@ def main():
 		print(fmt_row(row))
 
 	print('')
+	cs = added_card_rows
+	gcs = [x for x in cs if skey(x)>=5]
+	ttl_val = sum(skey(x) for x in cs)
+	ttl_good_val = sum(skey(x) for x in gcs)
+	ll.rule(f'Total value for {len(cs)} [grey70]([/grey70]{len(gcs)}[grey70])[/grey70] cards: [green]${ttl_val:,.2f}[/green] ([green]${ttl_good_val:,.2f}[/green])')
+	print('')
 
 	try:
 		ans = ll.yn("Add these cards to your collection?")

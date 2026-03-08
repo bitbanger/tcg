@@ -363,6 +363,7 @@ class Game:
 		return self.sets[name]
 
 
+	'''
 	def card(self, name):
 		for g in fetch(f'{self.category_id}/groups'):
 			for c in (s:=Set(self, g)).cards:
@@ -371,3 +372,7 @@ class Game:
 					if 'OP07' not in s.abbreviation:
 						continue
 					print(c.name, s.abbreviation, c.category_id, c.group_id, c.product_id)
+	'''
+
+	def card(self, abbr, num, limit=1):
+		return Set.by_abbr(self, abbr).card(num)
