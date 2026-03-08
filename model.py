@@ -146,6 +146,10 @@ class CardSet:
 		return n
 
 
+	def realize(self, variant=None):
+		return Card.from_card_set(self, variant=variant)
+
+
 	def prices(self):
 		return {k: v for k, v in self.var2prices.items()} # copy
 
@@ -165,15 +169,26 @@ class CardSet:
 
 		return path
 
-	def price(self, var=None):
-		if (not var):
-			if len(self.var2prices)==1:
-				var = list(self.var2prices.keys())[0]
-			else:
-				vsstr = ll.andify(self.var2prices.keys(), quote="'")
-				raise Exception(f"{str(self)} has multiple variants ({vsstr}); pick one, please")
 
-		return self.prices()[norm(var)]
+	def vsstr(self, vs=None):
+		return ll.andify(vs or self.var2prices.keys(), quote="'")
+
+
+	def price(self, var=None, safe=False):
+		try:
+			if (not var):
+				if len(self.var2prices)==1:
+					var = list(self.var2prices.keys())[0]
+				else:
+					vsstr = ll.andify(self.var2prices.keys(), quote="'")
+					raise Exception(f"{str(self)} has multiple variants ({vsstr}); pick one, please")
+
+			return self.prices()[norm(var)]
+		except Exception as e:
+			if safe:
+				return 0.0
+			else:
+				raise e
 
 
 	def min_price(self):
@@ -189,8 +204,8 @@ class CardSet:
 
 
 	@staticmethod
-	def fmt(card, vs, subtype):
-		price = card.price(var=subtype)
+	def fmt(card, vs, variant):
+		price = card.price(var=variant)
 
 		name_col = 'khaki3'
 		num_col = 'blue'
@@ -234,7 +249,69 @@ class CardSet:
 
 
 	def __str__(self):
-		return f'{self.name} #{self.number}'
+		return f'{self.name} #{self.number} (variants: {self.vsstr()})'
+
+
+class Card(CardSet):
+	def __init__(self, json, variant=None):
+		super().__init__(json)
+		if variant is None:
+			if len(self.variants) > 1:
+				raise Exception(f"Multiple possible variants for card '{super()}'")
+			else:
+				variant = self.variants[0]
+
+		self.possible_variants = self.variants
+		self.variant = variant
+		if self.variant.lower() not in ll.map(ll.lower, self.possible_variants):
+			raise Exception(f"Variant '{self.variant}' not one of the possible variants for card '{super().__str__(self)}'")
+
+
+	def price(self):
+		return super().price(var=self.variant)
+
+
+	def __str__(self):
+		return f'{self.name} #{self.number} ({self.variant})'
+
+
+	def fmt(self):
+		price = self.price()
+
+		name_col = 'khaki3'
+		num_col = 'blue'
+		mag = 0.75
+		vcol = f'rgb({int(100*mag)},{int(100*mag)},{int(175*mag)})'
+		if price >= 20:
+			pcol = 'rgb(0,200,75)'
+		elif price >= 10:
+			pcol = 'rgb(0,130,37)'
+		elif price >= 5:
+			pcol = 'grey50'
+		elif price >= 2:
+			pcol = 'grey42'
+		else:
+			pcol = 'grey30'
+
+		pstr = f'[{pcol}]${price:.02f}[/{pcol}]'
+
+		s = f'{pstr}\t'
+		s += f'[{name_col}]{self.name}[/{name_col}] [{num_col}]#{self.number}[/{num_col}] [{vcol}]{self.variant}[/{vcol}]'
+
+		return s
+
+
+	@staticmethod
+	def from_card_set(cs, variant=None):
+		return Card(cs.json, variant=variant)
+
+
+	@staticmethod
+	def by_id(game_id, set_id, card_id, variant=None):
+		return Card.from_card_set(
+			CardSet.by_id(game_id, set_id, card_id),
+			variant=variant,
+		)
 
 
 class Set:
@@ -296,13 +373,15 @@ class Set:
 		raise Exception(f"Group abbreviation '{abbr}' (category ID {game.category_id}) not found")
 
 
-	def card(self, num, limit=1):
+	def card(self, num, filter='', limit=1):
 		cands = []
 		for c in self.cards:
 			if CardSet.normnum(c.number) == CardSet.normnum(str(num)):
-				cands.append(c)
+				if filter.lower() in c.name.lower():
+					cands.append(c)
 		if len(cands) > 1 and limit==1:
-			raise Exception(f"Too many {self.game.name} {self.name} cands with number {num}")
+			candsstr = ll.andify(cands, quote="'")
+			raise Exception(f"Too many {self.game.name} {self.name} cands with number {num} ({candsstr})")
 		elif len(cands) == 0:
 			return None
 
@@ -388,5 +467,5 @@ class Game:
 					print(c.name, s.abbreviation, c.category_id, c.group_id, c.product_id)
 	'''
 
-	def card(self, abbr, num, limit=1):
-		return Set.by_abbr(self, abbr).card(num)
+	def card(self, nabbr, num, filter='', limit=1):
+		return self.set(nabbr).card(num, filter=filter)
