@@ -2,7 +2,7 @@ import ll
 import sys
 
 from collection import parse_row
-from model import Card
+from model import CardSet
 
 
 def main():

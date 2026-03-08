@@ -1,7 +1,7 @@
 import ll
 
 from collection import parse_row
-from model import Card, Game, Set
+from model import CardSet, Game, Set
 
 tcg_id_to_srow = {}
 for row in ll.track(ll.csv('data/scp/pokemon.csv', stream=True), total=ll.wc_l('data/scp/pokemon.csv')):

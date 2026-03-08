@@ -1,6 +1,6 @@
 import ll
 
-from model import Game, Set, Card
+from model import Game, Set, CardSet
 
 # Name,Set code,Set name,Collector number,Foil,Rarity,Quantity,ManaBox ID,Scryfall ID,Purchase price,Misprint,Altered,Condition,Language,Purchase price currency
 

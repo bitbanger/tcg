@@ -1,7 +1,7 @@
 import ll
 
 from collection import fmt_row, parse_row
-from model import Game, Set, Card
+from model import Game, Set, CardSet
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
 
 		for num in nums:
 			var = ''
-			num = Card.normnum(num)
+			num = CardSet.normnum(num)
 			if len(spl:=num.strip().split()) > 1:
 				num = spl[0]
 				var = ' '.join(spl[1:])

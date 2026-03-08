@@ -95,7 +95,7 @@ def fetch(*a, **kw):
 	return _fetcher.fetch(*a, **kw)
 
 
-class Card:
+class CardSet:
 	def __init__(self, json):
 		self.json = json
 		for k, v in json.items():
@@ -120,7 +120,7 @@ class Card:
 			self.number = self.number.split('/')[0]
 		while self.number.startswith('0'):
 			self.number = self.number[1:]
-		self.number = Card.normnum(self.number)
+		self.number = CardSet.normnum(self.number)
 
 		self.var2prices = {}
 		self.variants = []
@@ -229,7 +229,7 @@ class Card:
 		cards = fetch(f'{game_id}/{set_id}/products')
 		for c in cards:
 			if str(c['productId']) == str(card_id):
-				return Card(c)
+				return CardSet(c)
 		raise Exception(f"Product ID {card_id} (category ID {game_id}, group ID {set_id}) not found")
 
 
@@ -251,7 +251,7 @@ class Set:
 			if 'extendedData' not in c or (not any(e['name']=='Number' for e in c['extendedData'])):
 				# It's not a card
 				continue
-			self.cards.append(Card.by_id(self.game.category_id, self.group_id, c['productId']))
+			self.cards.append(CardSet.by_id(self.game.category_id, self.group_id, c['productId']))
 
 
 	@staticmethod
@@ -299,7 +299,7 @@ class Set:
 	def card(self, num, limit=1):
 		cands = []
 		for c in self.cards:
-			if Card.normnum(c.number) == Card.normnum(str(num)):
+			if CardSet.normnum(c.number) == CardSet.normnum(str(num)):
 				cands.append(c)
 		if len(cands) > 1 and limit==1:
 			raise Exception(f"Too many {self.game.name} {self.name} cands with number {num}")
