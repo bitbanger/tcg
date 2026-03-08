@@ -249,7 +249,7 @@ class CardSet:
 
 
 	def __str__(self):
-		return f'{self.name} #{self.number} (variants: {self.vsstr()})'
+		return f'{self.name} #{self.number}' + (f' (variants: {self.vsstr()})' if len(self.variants)>1 else '')
 
 
 class Card(CardSet):

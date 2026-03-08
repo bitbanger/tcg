@@ -42,10 +42,11 @@ def main():
 				ll.err(f'no card found for {num}')
 
 			# Render the coll.csv row
-			all_vars = ll.no_nones(ll.regf('\(([^)]*)\)', all=True)(card.name) + [var] if var else [])
+			# all_vars = ll.no_nones(ll.regf('\(([^)]*)\)', all=True)(card.name) + [var] if var else [])
+			all_vars = [var]
 			row_name = card.name
-			for av in all_vars:
-				row_name = row_name.replace(f' ({av})', '')
+			# for av in all_vars:
+				# row_name = row_name.replace(f' ({av})', '')
 
 			price = card.price(var=var)
 

@@ -1,6 +1,21 @@
 import ll
 
-from model import Card
+from model import Card, CardSet
+
+
+def parse_row(row):
+	cat_id = row['tcg_category_id']
+	group_id = row['tcg_group_id']
+	product_id = row['tcg_product_id']
+	card = CardSet.by_id(row['tcg_category_id'], row['tcg_group_id'], row['tcg_product_id'])
+	subtype = row['tcg_subtype']
+
+	return (card, row['vars'].split(','), subtype)
+
+
+def fmt_row(row):
+	card, vs, subtype = parse_row(row)
+	return CardSet.fmt(card, vs, subtype)
 
 
 def main():
