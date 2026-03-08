@@ -184,6 +184,10 @@ class Card:
 		return max(self.var2prices.values())
 
 
+	def max_price_variant(self):
+		return max(self.var2prices.items(), key=ll.nth(1))[0]
+
+
 	@staticmethod
 	def fmt(card, vs, subtype):
 		price = card.price(var=subtype)
@@ -357,9 +361,19 @@ class Game:
 
 
 	def set(self, name):
+		# Try abbr first
 		name = norm(name)
 		if name not in self.sets:
-			self.sets[name] = Set.by_name(self, name)
+			def _lkup(nm):
+				try:
+					return Set.by_abbr(self, nm)
+				except:
+					return Set.by_name(self, nm)
+			s = _lkup(name)
+			self.sets[name] = s
+			self.sets[s.name] = s
+			self.sets[s.abbreviation] = s
+
 		return self.sets[name]
 
 
