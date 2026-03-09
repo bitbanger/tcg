@@ -89,7 +89,7 @@ def main():
 
 	def skey(r):
 		_card, _, subtype = parse_row(r)
-		return _card.price(var=subtype)
+		return _card.price()
 	added_card_rows = sorted(added_card_rows, key=skey)
 	for row in added_card_rows:
 		print(fmt_row(row))

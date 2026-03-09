@@ -7,15 +7,16 @@ def parse_row(row):
 	cat_id = row['tcg_category_id']
 	group_id = row['tcg_group_id']
 	product_id = row['tcg_product_id']
-	card = CardSet.by_id(row['tcg_category_id'], row['tcg_group_id'], row['tcg_product_id'])
 	subtype = row['tcg_subtype']
+	card = Card.by_id(row['tcg_category_id'], row['tcg_group_id'], row['tcg_product_id'], variant=subtype)
 
 	return (card, row['vars'].split(','), subtype)
 
 
 def fmt_row(row):
 	card, vs, subtype = parse_row(row)
-	return CardSet.fmt(card, vs, subtype)
+	# cs = CardSet.fmt(card, vs, subtype)
+	return card.fmt()
 
 
 def main():
@@ -35,7 +36,14 @@ def main():
 			print(card.image())
 			print('')
 
-	print(f'\n{len(cards)} cards')
+	print('')
+	cs = cards
+	gcs = [x for x in cs if x.price()>=5]
+	ttl_val = sum(x.price() for x in cs)
+	ttl_good_val = sum(x.price() for x in gcs)
+	ll.rule(f'Total value for {len(cs)} [grey70]([/grey70]{len(gcs)}[grey70])[/grey70] cards: [green]${ttl_val:,.2f}[/green] ([green]${ttl_good_val:,.2f}[/green])')
+	print('')
+
 
 
 if __name__ == '__main__':

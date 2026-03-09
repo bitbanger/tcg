@@ -154,17 +154,26 @@ class CardSet:
 		return {k: v for k, v in self.var2prices.items()} # copy
 
 
-	def image(self):
+	def image(self, stale_days_404=1):
 		ext = self.image_url.split('.')[-1]
-		path = ll.here(f'data/images/{self.category_id}/{self.group_id}/{self.product_id}.{ext}')
+		img_path = f'{self.category_id}/{self.group_id}/'
+		img_fn = f'{self.product_id}.{ext}'
+		path = ll.ospj(ll.here(f'data/images'), img_path, img_fn)
 
 		os.makedirs(ll.dirname(path), exist_ok=True)
+
+		no_img_path = ll.ospj(ll.here(f'data/images/.no_imgs'), img_path, img_fn)
+
+		if ll.fexists(no_img_path) and ((datetime.now()-ll.dt(ll.read(no_img_path)))<=timedelta(days=stale_days_404)):
+			return '(no image)'
 
 		if not ll.fexists(path):
 			resp = ll.http(self.image_url, b=True)
 			if len(resp) < 9001:
+				ll.write(no_img_path, ll.dt(datetime.now()))
 				return '(no image)'
 
+			os.remove(no_img_path)
 			ll.write(path, resp)
 
 		return path
@@ -272,7 +281,8 @@ class Card(CardSet):
 
 
 	def __str__(self):
-		return f'{self.name} #{self.number} ({self.variant})'
+		name = self.name.split(' (variants')[0]
+		return f'{name} #{self.number} ({self.variant})'
 
 
 	def fmt(self):
@@ -296,7 +306,8 @@ class Card(CardSet):
 		pstr = f'[{pcol}]${price:.02f}[/{pcol}]'
 
 		s = f'{pstr}\t'
-		s += f'[{name_col}]{self.name}[/{name_col}] [{num_col}]#{self.number}[/{num_col}] [{vcol}]{self.variant}[/{vcol}]'
+		name = self.name.split(' (variants')[0]
+		s += f'[{name_col}]{name}[/{name_col}] [{num_col}]#{self.number}[/{num_col}] [{vcol}]{self.variant}[/{vcol}]'
 
 		return s
 
