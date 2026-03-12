@@ -25,7 +25,7 @@ def main():
 		row['tcg_group_id'],
 		row['tcg_product_id'],
 		variant=row['tcg_subtype'],
-	) for row in ll.csv('_collection/coll.csv')]
+	) for row in ll.csv(ll.arg('-f', '--file', default='_collection/coll.csv'))]
 
 	cards = sorted(cards, key=ll.dotcall('price'))
 

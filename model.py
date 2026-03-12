@@ -173,8 +173,11 @@ class CardSet:
 				ll.write(no_img_path, ll.dt(datetime.now()))
 				return '(no image)'
 
-			os.remove(no_img_path)
-			ll.write(path, resp)
+			try:
+				os.remove(no_img_path)
+			except FileNotFoundError:
+				pass
+			ll.write(path, resp, swap=False)
 
 		return path
 
