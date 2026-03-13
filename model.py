@@ -344,6 +344,8 @@ class Set:
 				continue
 			self.cards.append(CardSet.by_id(self.game.category_id, self.group_id, c['productId']))
 
+		self.abbr = self.abbreviation
+
 
 	@staticmethod
 	def by_name(game, name):
