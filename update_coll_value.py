@@ -13,7 +13,7 @@ def main():
 	for row in rows:
 		card, _, subtype = parse_row(row)
 
-		price = card.price(var=subtype)
+		price = card.price()
 		price_updated = ll.ctime(f'data/prices/{card.category_id}/{card.group_id}.json')
 
 		# Update row
