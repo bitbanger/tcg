@@ -81,6 +81,7 @@ def main():
 			# print(f'\t\t[{col}]${price}[/{col}]')
 
 			card = card.realize(variant=var)
+			row['condition'] = ''
 			row['psa_10'] = card.graded_price(grade='manual-only-price') or ''
 			row['cgc_10'] = card.graded_price(grade='condition-17-price') or ''
 			row['grade_9'] = card.graded_price(grade='graded-price') or ''
