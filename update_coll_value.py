@@ -11,12 +11,23 @@ def main():
 	rows = ll.csv(coll_path)
 
 	for row in rows:
-		card, _, subtype = parse_row(row)
-
-		price = card.price()
-		price_updated = ll.ctime(f'data/prices/{card.category_id}/{card.group_id}.json')
+		try:
+			card, _, subtype = parse_row(row)
+		except:
+			continue
 
 		# Update row
+		match row['condition']:
+			case 'CGC 10':
+				price = card.graded_price(grade='condition-17-price')
+				price_updated = ll.ctime(f'data/scp_{card.game.name.lower()}_prices.json')
+			case 'PSA 10':
+				price = card.graded_price(grade='manual-only-price')
+				price_updated = ll.ctime(f'data/scp_{card.game.name.lower()}_prices.json')
+			case _:
+				price = card.price()
+				price_updated = ll.ctime(f'data/prices/{card.category_id}/{card.group_id}.json')
+
 		row['value'] = price
 		row['value_updated'] = price_updated
 

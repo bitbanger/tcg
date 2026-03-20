@@ -2,6 +2,7 @@ import ll
 
 from model import Card, CardSet
 
+GRADE = 'condition-17-price'
 
 def parse_row(row):
 	cat_id = row['tcg_category_id']
@@ -20,17 +21,51 @@ def fmt_row(row):
 
 
 def main():
-	cards = [Card.by_id(
-		row['tcg_category_id'],
-		row['tcg_group_id'],
-		row['tcg_product_id'],
-		variant=row['tcg_subtype'],
-	) for row in ll.csv(ll.arg('-f', '--file', default='_collection/coll.csv'))]
+	def _card(row):
+		cat = row['tcg_category_id']
+		gr = row['tcg_group_id']
+		pr = row['tcg_product_id']
+		va = row['tcg_subtype']
+		try:
+			card = Card.by_id(cat, gr, pr, variant=va)
+		except Exception as e:
+			card = None
 
-	cards = sorted(cards, key=ll.dotcall('price'))
+		if str(pr).startswith('fake_id'):
+			class A: pass
+			mag = 0.75
+			vcol = f'rgb({int(100*mag)},{int(100*mag)},{int(175*mag)})'
+			vstr = f' [{vcol}]{va}[/{vcol}]' if va else ''
+			price = float(row['value'])
+			if price >= 20:
+				pcol = 'rgb(0,200,75)'
+			elif price >= 10:
+				pcol = 'rgb(0,130,37)'
+			elif price >= 5:
+				pcol = 'grey50'
+			elif price >= 2:
+				pcol = 'grey42'
+			else:
+				pcol = 'grey30'
+			pstr = f'${price:,.2f}'
+			A.fmt = lambda self, grade=None: f'[{pcol}][/{pcol}]\t[khaki3]{row["name"]}[/khaki3] [blue]#{row["number"]}[/blue]' + vstr
+			A.price = lambda self: float(price)
+			A.graded_price = lambda self, grade=None: None
+			a = A()
+			return a
+		else:
+			return Card.by_id(cat, gr, pr, variant=va)
+
+	rows = ll.csv(ll.arg('-f', '--file', default='_collection/coll.csv'))
+	cards = [_card(row)
+		for row in rows]
+
+	# cards = sorted(cards, key=ll.dotcall('price'))
+	# cards = sorted(cards, key=ll.dotcall('graded_price'))
+	cards = sorted(cards, key=lambda c: c.graded_price(grade=GRADE) or 0)
 
 	for card in cards:
-		print(card.fmt())
+		print(card.fmt(grade=GRADE))
 		if ll.arg('-i', '--images', action='store_true'):
 			print('')
 			print(card.image())

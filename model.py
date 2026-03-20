@@ -1,3 +1,4 @@
+import json as _json
 import ll
 import os
 
@@ -9,6 +10,45 @@ def norm(s):
 
 
 _global_fetch_cache = dict()
+
+_graded_prices = ll.dd(dict)
+def graded_prices(game, stale_days=1):
+	global _graded_prices
+
+	# Be forgiving about the input
+	if isinstance(game, Game):
+		game = game.name
+	elif isinstance(game, int):
+		game = Game.by_id(game).name
+	elif isinstance(game, str) and game.isnumeric():
+		game = Game.by_id(int(game)).name
+
+	# We can only bulk download some game CSVs
+	game = game.lower().strip()
+	if game not in ('magic', 'pokemon', 'one-piece', 'yugioh'):
+		return {}
+
+	data_dir = ll.here('data')
+	fn = f'scp_{game}_prices.json'
+	path = ll.ospj(data_dir, fn)
+
+	# Download the price data if necessary
+	if (not ll.fexists(path)) or (ll.age(path) >= ll.days(stale_days)):
+		def _prices(row):
+			_price = lambda s: float(s[1:]) if s else None
+			return {k: _price(v) for k, v in row.items() if '-price' in k}
+
+		url = f"https://www.pricecharting.com/price-guide/download-custom?t={ll.env('SCP_API_TOKEN')}&category={game}-cards"
+		_rows = ll.csv(ll.sel_dl(url, clobber=True, tries=30))
+
+		d = {str(r['tcg-id']): _prices(r) for r in _rows}
+
+		ll.write(path, _json.dumps(d, indent=2))
+
+	# Load & return the prices
+	if game not in _graded_prices:
+		_graded_prices[game] = _json.loads(ll.read(path))
+	return _graded_prices[game]
 
 
 class Fetcher:
@@ -134,6 +174,25 @@ class CardSet:
 
 		self.var2prices = {norm(k): self.var2prices[k]
 			for k in sorted(self.var2prices)} # by variant name
+
+		self._game = None
+		self._set = None
+
+
+	# TODO: figure out why the game & set members have to be
+	# properties to avoid an infinite recursion issue :/
+	@property
+	def game(self):
+		if self._game is None:
+			self._game = Game.by_id(self.category_id)
+		return self._game
+
+
+	@property
+	def set(self):
+		if self._set is None:
+			self._set = Set.by_id(self.game, self.group_id)
+		return self._set
 
 
 	@staticmethod
@@ -263,7 +322,6 @@ class CardSet:
 	def __str__(self):
 		return f'{self.name} #{self.number}' + (f' (variants: {self.vsstr()})' if len(self.variants)>1 else '')
 
-
 class Card(CardSet):
 	def __init__(self, json, variant=None):
 		super().__init__(json)
@@ -276,11 +334,15 @@ class Card(CardSet):
 		self.possible_variants = self.variants
 		self.variant = variant
 		if self.variant.lower() not in ll.map(ll.lower, self.possible_variants):
-			raise Exception(f"Variant '{self.variant}' not one of the possible variants for card '{super().__str__(self)}'")
+			raise Exception(f"Variant '{self.variant}' not one of the possible variants for card '{self}' ({self.vsstr()})")
 
 
 	def price(self):
 		return super().price(var=self.variant)
+
+
+	def graded_price(self, grade='condition-17-price', stale_days=1):
+		return (graded_prices(self.game.name).get(str(self.product_id)) or {}).get(grade)
 
 
 	def __str__(self):
@@ -288,7 +350,7 @@ class Card(CardSet):
 		return f'{name} #{self.number} ({self.variant})'
 
 
-	def fmt(self):
+	def fmt(self, grade='manual-only-price'):
 		price = self.price()
 
 		name_col = 'khaki3'
@@ -306,7 +368,16 @@ class Card(CardSet):
 		else:
 			pcol = 'grey30'
 
+		match grade:
+			case 'manual-only-price':
+				gstr = 'PSA 10'
+			case 'condition-17-price':
+				gstr = 'CGC 10'
+			case _:
+				gstr = grade
 		pstr = f'[{pcol}]${price:.02f}[/{pcol}]'
+		if (gprc:=self.graded_price(grade=grade)):
+			pstr += f' [grey70]({gstr}: ${gprc:,.2f})[/grey70]'
 
 		s = f'{pstr}\t'
 		name = self.name.split(' (variants')[0]
@@ -484,4 +555,5 @@ class Game:
 	'''
 
 	def card(self, nabbr, num, filter='', limit=1):
-		return self.set(nabbr).card(num, filter=filter)
+		return self.set(nabbr).card(num, filter=filter, limit=limit)
+

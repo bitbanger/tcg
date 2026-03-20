@@ -63,6 +63,7 @@ def main():
 				'rarity': card.rarity,
 				'value': price,
 				'value_updated': ll.ctime(f'data/prices/{card.category_id}/{card.group_id}.json'),
+				'language': 'en',
 			}
 			# print(ll.csv(row).strip())
 
@@ -78,6 +79,11 @@ def main():
 				col = 'grey70'
 				# print(f'\t\t[grey70]${}[/grey70]')
 			# print(f'\t\t[{col}]${price}[/{col}]')
+
+			card = card.realize(variant=var)
+			row['psa_10'] = card.graded_price(grade='manual-only-price') or ''
+			row['cgc_10'] = card.graded_price(grade='condition-17-price') or ''
+			row['grade_9'] = card.graded_price(grade='graded-price') or ''
 
 			added_card_rows.append(row)
 			# ll.rule(row_name + varstr)
@@ -108,9 +114,9 @@ def main():
 		quit(1)
 	if ans:
 		cfn = ll.here('_collection/coll.csv')
-		if not ll.fexists(cfn):
-			ll.write(cfn, ll.csv(row.keys()).strip())
-		for row in added_card_rows:
+		for i, row in enumerate(added_card_rows):
+			if i==0 and (not ll.fexists(cfn)):
+				ll.write(cfn, ll.csv(row.keys()).strip())
 			ll.append(cfn, ll.csv(row).strip())
 		# for c in Game(game).set(set).cards:
 			# print(c.name, c.number, c.price())
