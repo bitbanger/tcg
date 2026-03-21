@@ -350,7 +350,7 @@ class Card(CardSet):
 		return f'{name} #{self.number} ({self.variant})'
 
 
-	def fmt(self, grade='manual-only-price'):
+	def fmt(self, grade='manual-only-price', show_price=True):
 		price = self.price()
 
 		name_col = 'khaki3'
@@ -376,14 +376,18 @@ class Card(CardSet):
 			case _:
 				gstr = grade
 		pstr = f'[{pcol}]${price:.02f}[/{pcol}]'
-		if (gprc:=self.graded_price(grade=grade)):
-			pstr += f' [grey70]({gstr}: ${gprc:,.2f})[/grey70]'
 
-		s = f'{pstr}\t'
+		s = f'{pstr}\t' if show_price else ''
 		name = self.name.split(' (variants')[0]
 		s += f'[{name_col}]{name}[/{name_col}] [{num_col}]#{self.number}[/{num_col}] [{vcol}]{self.variant}[/{vcol}]'
+		if show_price and (gprc:=self.graded_price(grade=grade)):
+			s += f'\t[grey70]({gstr}: ${gprc:,.2f})[/grey70]'
 
 		return s
+
+
+	def fmt_no_price(self):
+		return self.fmt(show_price=False)
 
 
 	@staticmethod
@@ -407,13 +411,13 @@ class Set:
 		for k, v in self.json.items():
 			setattr(self, ll.uncamel(k), v)
 
-		self.cards = []
+		self.all_cards = []
 		# TODO: differentiate cards from boxes, etc.?
 		for c in fetch(f'{self.game.category_id}/{self.group_id}/products'):
 			if 'extendedData' not in c or (not any(e['name']=='Number' for e in c['extendedData'])):
 				# It's not a card
 				continue
-			self.cards.append(CardSet.by_id(self.game.category_id, self.group_id, c['productId']))
+			self.all_cards.append(CardSet.by_id(self.game.category_id, self.group_id, c['productId']))
 
 		self.abbr = self.abbreviation
 
@@ -462,7 +466,7 @@ class Set:
 
 	def card(self, num, filter='', limit=1):
 		cands = []
-		for c in self.cards:
+		for c in self.all_cards:
 			if CardSet.normnum(c.number) == CardSet.normnum(str(num)):
 				if filter.lower() in c.name.lower():
 					cands.append(c)
@@ -473,6 +477,10 @@ class Set:
 			return None
 
 		return cands if (len(cands)>1 or limit!=1) else cands[0]
+
+
+	def cards(self, num, filter=''):
+		return self.card(num, filter=filter, limit=None)
 
 
 	def __str__(self):
@@ -556,4 +564,8 @@ class Game:
 
 	def card(self, nabbr, num, filter='', limit=1):
 		return self.set(nabbr).card(num, filter=filter, limit=limit)
+
+
+	def cards(self, nabbr, num, filter=''):
+		return self.card(nabbar, num, filter=filter)
 
