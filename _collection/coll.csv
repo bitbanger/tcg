@@ -668,3 +668,31 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,24451,fake_id_0,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,0.00,,en,,,,
 3,24541,676046,Holofoil,Pokemon,ME: Ascended Heroes,234,Banette,Holofoil,Illustration Rare,12.62,2026-03-21 17:05:56,en,,183.01,146.0,21.0
 3,24541,676046,Holofoil,Pokemon,ME: Ascended Heroes,234,Banette,Holofoil,Illustration Rare,12.62,2026-03-21 17:05:56,en,,183.01,146.0,21.0
+3,24541,676018,Reverse Holofoil,Pokemon,ME: Ascended Heroes,206,Team Rocket's Hypnotizer,Reverse Holofoil,Uncommon,0.28,2026-03-21 17:05:56,en,,31.53,25.0,10.4
+3,24541,676014,Reverse Holofoil,Pokemon,ME: Ascended Heroes,202,Team Rocket's Ariana,Reverse Holofoil,Uncommon,0.23,2026-03-21 17:05:56,en,,30.74,25.0,10.19
+3,24541,676873,Reverse Holofoil,Pokemon,ME: Ascended Heroes,25,Entei (Quick Ball),Reverse Holofoil,Rare,0.21,2026-03-21 17:05:56,en,,,,
+3,24541,675974,Holofoil,Pokemon,ME: Ascended Heroes,162,Team Rocket's Kangaskhan ex,Holofoil,Double Rare,1.22,2026-03-21 17:05:56,en,,39.69,32.0,12.56
+3,24541,675939,Holofoil,Pokemon,ME: Ascended Heroes,127,Team Rocket's Honchkrow,Holofoil,Rare,1.17,2026-03-21 17:05:56,en,,38.61,31.0,12.27
+3,24541,675888,Holofoil,Pokemon,ME: Ascended Heroes,76,Lillie's Clefairy ex,Holofoil,Double Rare,0.84,2026-03-21 17:05:56,en,,39.79,32.0,12.58
+3,24541,675837,Holofoil,Pokemon,ME: Ascended Heroes,25,Entei,Holofoil,Rare,0.11,2026-03-21 17:05:56,en,,31.87,26.0,10.49
+3,24541,675831,Holofoil,Pokemon,ME: Ascended Heroes,19,Team Rocket's Spidops,Holofoil,Rare,0.09,2026-03-21 17:05:56,en,,38.8,31.0,12.32
+3,24541,675869,Holofoil,Pokemon,ME: Ascended Heroes,57,Pikachu ex,Holofoil,Double Rare,2.64,2026-03-21 17:05:56,en,,47.91,38.0,16.21
+3,24541,675976,Holofoil,Pokemon,ME: Ascended Heroes,164,Larry's Dudunsparce ex,Holofoil,Double Rare,0.75,2026-03-21 17:05:56,en,,39.84,32.0,12.6
+3,24541,675965,Holofoil,Pokemon,ME: Ascended Heroes,153,Rayquaza,Holofoil,Rare,0.22,2026-03-21 17:05:56,en,,38.86,31.0,12.34
+3,24541,675860,Holofoil,Pokemon,ME: Ascended Heroes,48,Regice ex,Holofoil,Double Rare,0.73,2026-03-21 17:05:56,en,,39.74,32.0,12.57
+3,24541,675884,Holofoil,Pokemon,ME: Ascended Heroes,72,Iono's Kilowattrel,Holofoil,Rare,0.1,2026-03-21 17:05:56,en,,30.98,25.0,10.26
+3,24541,676920,Reverse Holofoil,Pokemon,ME: Ascended Heroes,87,Ralts (Love Ball),Reverse Holofoil,Common,0.59,2026-03-21 17:05:56,en,,,,
+3,24541,676862,Reverse Holofoil,Pokemon,ME: Ascended Heroes,13,Beautifly (Love Ball),Reverse Holofoil,Uncommon,0.19,2026-03-21 17:05:56,en,,,,
+3,24541,676889,Reverse Holofoil,Pokemon,ME: Ascended Heroes,45,Weavile (Dusk Ball),Reverse Holofoil,Uncommon,0.22,2026-03-21 17:05:56,en,,30.93,25.0,10.25
+3,24541,676885,Reverse Holofoil,Pokemon,ME: Ascended Heroes,40,Golduck (Love Ball),Reverse Holofoil,Uncommon,0.25,2026-03-21 17:05:56,en,,,,
+3,24541,676862,Reverse Holofoil,Pokemon,ME: Ascended Heroes,13,Beautifly (Love Ball),Reverse Holofoil,Uncommon,0.19,2026-03-21 17:05:56,en,,,,
+3,24541,676938,Reverse Holofoil,Pokemon,ME: Ascended Heroes,106,Solrock (Dusk Ball),Reverse Holofoil,Uncommon,0.2,2026-03-21 17:05:56,en,,,,
+3,24541,676852,Reverse Holofoil,Pokemon,ME: Ascended Heroes,1,Erika's Oddish (Poke Ball),Reverse Holofoil,Common,0.32,2026-03-21 17:05:56,en,,,,
+3,24541,676987,Reverse Holofoil,Pokemon,ME: Ascended Heroes,174,Larry's Braviary (Poke Ball),Reverse Holofoil,Uncommon,0.17,2026-03-21 17:05:56,en,,,,
+3,24541,677030,Reverse Holofoil,Pokemon,ME: Ascended Heroes,46,Snorunt (Energy Symbol Pattern),Reverse Holofoil,Common,0.27,2026-03-21 17:05:56,en,,34.43,28.0,11.17
+3,24541,677005,Reverse Holofoil,Pokemon,ME: Ascended Heroes,16,Budew (Energy Symbol Pattern),Reverse Holofoil,Common,0.25,2026-03-21 17:05:56,en,,36.15,29.0,11.62
+3,24541,677086,Reverse Holofoil,Pokemon,ME: Ascended Heroes,119,Carkol (Energy Symbol Pattern),Reverse Holofoil,Common,0.18,2026-03-21 17:05:56,en,,,,
+3,24541,677042,Reverse Holofoil,Pokemon,ME: Ascended Heroes,63,Helioptile (Energy Symbol Pattern),Reverse Holofoil,Common,0.17,2026-03-21 17:05:56,en,,,,
+3,24541,677090,Reverse Holofoil,Pokemon,ME: Ascended Heroes,124,Haunter (Energy Symbol Pattern),Reverse Holofoil,Uncommon,0.32,2026-03-21 17:05:56,en,,,,
+3,24541,677130,Reverse Holofoil,Pokemon,ME: Ascended Heroes,177,Hop's Cramorant (Energy Symbol Pattern),Reverse Holofoil,Uncommon,0.22,2026-03-21 17:05:56,en,,,,
+3,24541,677045,Reverse Holofoil,Pokemon,ME: Ascended Heroes,66,Vikavolt (Energy Symbol Pattern),Reverse Holofoil,Uncommon,0.24,2026-03-21 17:05:56,en,,,,
