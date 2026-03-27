@@ -5,6 +5,20 @@ import os
 from datetime import datetime, timedelta
 
 
+def p2pcol(price):
+	if price >= 50:
+		pcol = 'rgb(0,200,75)'
+	elif price >= 20:
+		pcol = 'rgb(0,130,37)'
+	elif price >= 10:
+		pcol = 'rgb(0,80,15)'
+	elif price >= 2:
+		pcol = 'grey50'
+	else:
+		pcol = 'grey30'
+	return pcol
+
+
 class AmbiguousError(Exception): pass
 
 
@@ -292,16 +306,7 @@ class CardSet:
 		num_col = 'blue'
 		mag = 0.75
 		vcol = f'rgb({int(100*mag)},{int(100*mag)},{int(175*mag)})'
-		if price >= 20:
-			pcol = 'rgb(0,200,75)'
-		elif price >= 10:
-			pcol = 'rgb(0,130,37)'
-		elif price >= 5:
-			pcol = 'grey50'
-		elif price >= 2:
-			pcol = 'grey42'
-		else:
-			pcol = 'grey30'
+		pcol = p2pcol(price)
 
 		s = str(card)
 		vsstr = ' '.join(sorted(f'({v})' for v in vs))
@@ -340,11 +345,14 @@ class CardSet:
 
 
 class Card(CardSet):
-	def __init__(self, json, variant=None):
+	def __init__(self, json, variant=None, choose=True):
 		super().__init__(json)
+
 		if variant is None:
 			if len(self.variants) > 1:
-				raise AmbiguousError(f"Multiple possible variants for card '{super()}'")
+				if not choose:
+					raise AmbiguousError(f"Multiple possible variants for card '{super().__str__()}'")
+				variant = ll.options(self.variants)
 			else:
 				variant = self.variants[0]
 
@@ -374,16 +382,7 @@ class Card(CardSet):
 		num_col = 'blue'
 		mag = 0.75
 		vcol = f'rgb({int(100*mag)},{int(100*mag)},{int(175*mag)})'
-		if price >= 20:
-			pcol = 'rgb(0,200,75)'
-		elif price >= 10:
-			pcol = 'rgb(0,130,37)'
-		elif price >= 5:
-			pcol = 'grey50'
-		elif price >= 2:
-			pcol = 'grey42'
-		else:
-			pcol = 'grey30'
+		pcol = p2pcol(price)
 
 		match grade:
 			case 'manual-only-price':
@@ -423,6 +422,17 @@ class Card(CardSet):
 	def __iter__(self):
 		# Just lie:
 		raise TypeError(f"'Card' object is not iterable")
+
+
+	def __eq__(self, other):
+		return hash(self) == hash(other)
+
+
+	def __hash__(self):
+		return ll.md5_int(self.game.name + self.set.name + self.name + self.number + self.variant)
+
+
+# this is the end of the Card class definition
 
 
 class Set:

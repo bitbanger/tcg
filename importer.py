@@ -5,17 +5,17 @@ from model import Game, Set, CardSet
 
 
 def main():
-	added_card_rows = []
-
+	cards = []
 	rows = []
 	for fn in ll.arg('fns', nargs='+'):
-		game = None
-		set = None
+		game = set = None
 		last_filt = ''
 		for line in ll.lines(fn):
 			line = line.strip()
 
-			if len(spl:=line.strip().split('/')) >= 3:
+			if line.startswith('#'):
+				continue
+			elif len(spl:=line.strip().split('/')) >= 3:
 				_, _game, _set = ll.map(ll.strip, spl)
 				game = Game.by_name(_game)
 				set = game.set(_set)
@@ -51,8 +51,10 @@ def main():
 							num = num.replace('  ', ' ').strip()
 
 					possibles = set.cards(num, filter=filt)
-					possibles = ll.flatten([[c.realize(v) for v in c.variants] for c in possibles])
+					possibles = ll.dedupe(ll.flatten([[c.realize(variant=v) for v in c.variants] for c in possibles]))
 					possibles = [c for c in possibles if (not var) or var.lower()==c.variant.lower()]
+					if len(possibles) == 0:
+						ll.err(f'No card found for {game.name} {set.name} #{num}' + f' [{var}]' if var else '')
 
 					opts = ll.map(ll.dotcall('fmt_no_price'), possibles)
 					if len(possibles) > 1:
@@ -79,10 +81,13 @@ def main():
 						'cgc_10': card.graded_price(grade='condition-17-price') or '',
 						'grade_9': card.graded_price(grade='graded-price') or '',
 					}
-					print(card.fmt())
+					# print(card.fmt())
+					cards.append(card)
 					rows.append(row)
 
-	gcs = [x for x in rows if x['value'] >= 5]
+	for card in sorted(cards, key=ll.dotcall('price')):
+		print(card.fmt())
+	gcs = [x for x in rows if x['value'] >= 10]
 	ttl_val = sum(r['value'] for r in rows)
 	ttl_good_val = sum(r['value'] for r in gcs)
 	ll.rule(f'Total value for {len(rows)} [grey70]([/grey70]{len(gcs)}[grey70])[/grey70] cards: [green]${ttl_val:,.2f}[/green] ([green]${ttl_good_val:,.2f}[/green])')
