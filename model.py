@@ -5,6 +5,9 @@ import os
 from datetime import datetime, timedelta
 
 
+class AmbiguousError(Exception): pass
+
+
 def norm(s):
 	return ''.join(c.lower() for c in s if c.lower() in 'abcdefghijklmnopqrstuvwxyz 0123456789')
 
@@ -205,7 +208,14 @@ class CardSet:
 		return n
 
 
+	def realize_all(self):
+		return [self.realize(variant=v) for v in self.variants]
+
+
 	def realize(self, variant=None):
+		if variant is None:
+			return self.realize(variant=ll.options(self.variants))
+
 		return Card.from_card_set(self, variant=variant)
 
 
@@ -252,7 +262,7 @@ class CardSet:
 					var = list(self.var2prices.keys())[0]
 				else:
 					vsstr = ll.andify(self.var2prices.keys(), quote="'")
-					raise Exception(f"{str(self)} has multiple variants ({vsstr}); pick one, please")
+					raise AmbiguousError(f"{str(self)} has multiple variants ({vsstr}); pick one, please")
 
 			return self.prices()[norm(var)]
 		except Exception as e:
@@ -319,15 +329,22 @@ class CardSet:
 		raise Exception(f"Product ID {card_id} (category ID {game_id}, group ID {set_id}) not found")
 
 
+
+
+	def __iter__(self):
+		return (c for c in self.realize_all())
+
+
 	def __str__(self):
 		return f'{self.name} #{self.number}' + (f' (variants: {self.vsstr()})' if len(self.variants)>1 else '')
+
 
 class Card(CardSet):
 	def __init__(self, json, variant=None):
 		super().__init__(json)
 		if variant is None:
 			if len(self.variants) > 1:
-				raise Exception(f"Multiple possible variants for card '{super()}'")
+				raise AmbiguousError(f"Multiple possible variants for card '{super()}'")
 			else:
 				variant = self.variants[0]
 
@@ -403,6 +420,11 @@ class Card(CardSet):
 		)
 
 
+	def __iter__(self):
+		# Just lie:
+		raise TypeError(f"'Card' object is not iterable")
+
+
 class Set:
 	def __init__(self, game, json):
 		self.game = game
@@ -464,23 +486,27 @@ class Set:
 		raise Exception(f"Group abbreviation '{abbr}' (category ID {game.category_id}) not found")
 
 
-	def card(self, num, filter='', limit=1):
+	def cards(self, num, filter=''):
 		cands = []
 		for c in self.all_cards:
 			if CardSet.normnum(c.number) == CardSet.normnum(str(num)):
 				if filter.lower() in c.name.lower():
-					cands.append(c)
-		if len(cands) > 1 and limit==1:
-			candsstr = ll.andify(cands, quote="'")
-			raise Exception(f"Too many {self.game.name} {self.name} cands with number {num} ({candsstr})")
-		elif len(cands) == 0:
-			return None
-
-		return cands if (len(cands)>1 or limit!=1) else cands[0]
+					for cc in c.realize_all():
+						cands.append(cc)
+		return cands
 
 
-	def cards(self, num, filter=''):
-		return self.card(num, filter=filter, limit=None)
+	def card(self, num, variant=None, filter='', choose=True):
+		# return self.card(num, filter=filter).realize_all()
+		cards = [c for c in self.cards(num, filter=filter)
+			if ((variant is None) or (c.variant==variant))]
+		if len(cards) == 1:
+			return cards[0]
+		elif not choose:
+			cardsstr = ll.andify(cards, quote="'")
+			raise AmbiguousError(f"Too many {self.game.name} {self.name} cards with number {num} ({cardsstr})")
+		else:
+			return ll.options(cards)
 
 
 	def __str__(self):
@@ -562,10 +588,10 @@ class Game:
 					print(c.name, s.abbreviation, c.category_id, c.group_id, c.product_id)
 	'''
 
-	def card(self, nabbr, num, filter='', limit=1):
-		return self.set(nabbr).card(num, filter=filter, limit=limit)
+	def card(self, nabbr, num, filter='', variant=None, choose=True):
+		return self.set(nabbr).card(num, filter=filter, variant=variant, choose=choose)
 
 
 	def cards(self, nabbr, num, filter=''):
-		return self.card(nabbar, num, filter=filter)
+		return self.set(nabbr).cards(num, filter=filter, limit=limit)
 
