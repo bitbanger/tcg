@@ -16,13 +16,20 @@ def main():
 		except:
 			continue
 
+		row['psa_10'] = card.graded_price(grade='manual-only-price') or ''
+		row['cgc_10'] = card.graded_price(grade='condition-17-price') or ''
+		row['grade_9'] = card.graded_price(grade='graded-price') or ''
+
 		# Update row
 		match row['condition']:
 			case 'CGC 10':
-				price = card.graded_price(grade='condition-17-price')
+				price = row['cgc_10']
 				price_updated = ll.ctime(f'data/scp_{card.game.name.lower()}_prices.json')
 			case 'PSA 10':
-				price = card.graded_price(grade='manual-only-price')
+				price = row['psa_10']
+				price_updated = ll.ctime(f'data/scp_{card.game.name.lower()}_prices.json')
+			case 'PSA 9':
+				price = row['grade_9']
 				price_updated = ll.ctime(f'data/scp_{card.game.name.lower()}_prices.json')
 			case _:
 				price = card.price()
