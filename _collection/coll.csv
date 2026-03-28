@@ -833,3 +833,32 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,23821,610623,Holofoil,Pokemon,SV: Prismatic Evolutions,112,Janine's Secret Art (Poke Ball Pattern),Holofoil,Uncommon,0.32,2026-03-27 20:02:49,en,,31.36,25.0,7.89
 3,23821,610572,Holofoil,Pokemon,SV: Prismatic Evolutions,50,Riolu (Poke Ball Pattern),Holofoil,Common,0.39,2026-03-27 20:02:49,en,,52.49,42.0,15.0
 3,23821,610602,Holofoil,Pokemon,SV: Prismatic Evolutions,89,Hawlucha (Poke Ball Pattern),Holofoil,Uncommon,0.27,2026-03-27 20:02:49,en,,40.0,32.0,16.42
+3,23821,610398,Holofoil,Pokemon,SV: Prismatic Evolutions,43,Flutter Mane,Holofoil,Rare,0.08,2026-03-27 20:02:49,en,,29.0,23.0,10.0
+3,23821,610380,Holofoil,Pokemon,SV: Prismatic Evolutions,25,Glaceon,Holofoil,Rare,0.23,2026-03-27 20:02:49,en,,39.76,29.99,10.35
+3,23821,610380,Holofoil,Pokemon,SV: Prismatic Evolutions,25,Glaceon,Holofoil,Rare,0.23,2026-03-27 20:02:49,en,,39.76,29.99,10.35
+3,23821,610395,Holofoil,Pokemon,SV: Prismatic Evolutions,40,Sylveon,Holofoil,Rare,0.38,2026-03-27 20:02:49,en,,45.0,15.0,16.27
+3,23821,610380,Holofoil,Pokemon,SV: Prismatic Evolutions,25,Glaceon,Holofoil,Rare,0.23,2026-03-27 20:02:49,en,,39.76,29.99,10.35
+3,23821,610384,Holofoil,Pokemon,SV: Prismatic Evolutions,29,Jolteon,Holofoil,Rare,0.23,2026-03-27 20:02:49,en,,32.5,24.99,12.75
+3,23821,610414,Holofoil,Pokemon,SV: Prismatic Evolutions,59,Umbreon,Holofoil,Rare,0.29,2026-03-27 20:02:49,en,,66.26,21.87,13.78
+3,23821,610368,Holofoil,Pokemon,SV: Prismatic Evolutions,13,Flareon,Holofoil,Rare,0.25,2026-03-27 20:02:49,en,,31.03,24.99,15.0
+3,23821,610360,Holofoil,Pokemon,SV: Prismatic Evolutions,5,Leafeon,Holofoil,Rare,0.22,2026-03-27 20:02:49,en,,39.5,27.34,12.5
+3,23821,610401,Holofoil,Pokemon,SV: Prismatic Evolutions,46,Iron Boulder,Holofoil,Rare,0.11,2026-03-27 20:02:49,en,,39.99,32.0,8.0
+3,23821,610420,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,65,Roaring Moon,Reverse Holofoil,Rare,0.16,2026-03-27 20:02:49,en,,71.0,57.0,19.92
+3,23821,610420,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,65,Roaring Moon,Reverse Holofoil,Rare,0.16,2026-03-27 20:02:49,en,,71.0,57.0,19.92
+3,23821,610429,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,74,Eevee,Reverse Holofoil,Common,0.22,2026-03-27 20:02:49,en,,47.48,24.5,15.0
+3,23821,610429,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,74,Eevee,Reverse Holofoil,Common,0.22,2026-03-27 20:02:49,en,,47.48,24.5,15.0
+3,23821,610435,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,80,Dudunsparce,Reverse Holofoil,Rare,0.21,2026-03-27 20:02:49,en,,31.45,25.0,11.0
+3,23821,610433,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,78,Noctowl,Reverse Holofoil,Rare,0.22,2026-03-27 20:02:49,en,,48.88,39.0,10.36
+3,23821,610567,Holofoil,Pokemon,SV: Prismatic Evolutions,45,Fezandipiti (Poke Ball Pattern),Holofoil,Rare,0.3,2026-03-27 20:02:49,en,,32.2,26.0,14.0
+3,23821,610623,Holofoil,Pokemon,SV: Prismatic Evolutions,112,Janine's Secret Art (Poke Ball Pattern),Holofoil,Uncommon,0.32,2026-03-27 20:02:49,en,,31.36,25.0,7.89
+3,23821,610585,Holofoil,Pokemon,SV: Prismatic Evolutions,68,Heatran (Poke Ball Pattern),Holofoil,Uncommon,0.24,2026-03-27 20:02:49,en,,31.14,25.0,13.1
+3,23821,610620,Holofoil,Pokemon,SV: Prismatic Evolutions,109,Friends in Paldea (Poke Ball Pattern),Holofoil,Common,0.26,2026-03-27 20:02:49,en,,31.58,25.0,10.52
+3,23821,610546,Holofoil,Pokemon,SV: Prismatic Evolutions,15,Litleo (Poke Ball Pattern),Holofoil,Common,0.31,2026-03-27 20:02:49,en,,26.25,21.0,13.0
+3,23821,610357,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,2,Exeggutor,Reverse Holofoil,Uncommon,0.14,2026-03-27 20:02:49,en,,31.1,25.0,10.36
+3,23821,610364,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,9,Applin,Reverse Holofoil,Common,0.12,2026-03-27 20:02:49,en,,13.0,10.0,10.71
+3,23821,610362,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,7,Cottonee,Reverse Holofoil,Common,0.05,2026-03-27 20:02:49,en,,23.62,19.0,10.28
+3,23821,610371,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,16,Pyroar,Reverse Holofoil,Uncommon,0.09,2026-03-27 20:02:49,en,,31.1,25.0,10.36
+3,23821,610357,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,2,Exeggutor,Reverse Holofoil,Uncommon,0.14,2026-03-27 20:02:49,en,,31.1,25.0,10.36
+3,23821,610453,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,98,Black Belt's Training,Reverse Holofoil,Common,0.11,2026-03-27 20:02:49,en,,30.4,24.0,18.08
+3,23821,610407,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,52,Hippopotas,Reverse Holofoil,Common,0.06,2026-03-27 20:02:49,en,,55.0,44.0,10.07
+3,23821,610397,Reverse Holofoil,Pokemon,SV: Prismatic Evolutions,42,Scream Tail,Reverse Holofoil,Uncommon,0.12,2026-03-27 20:02:49,en,,50.0,40.0,10.44
