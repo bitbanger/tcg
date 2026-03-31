@@ -326,6 +326,7 @@ class CardSet:
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_id(game_id, set_id, card_id):
 		cards = fetch(f'{game_id}/{set_id}/products')
 		for c in cards:
@@ -412,6 +413,7 @@ class Card(CardSet):
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_id(game_id, set_id, card_id, variant=None):
 		return Card.from_card_set(
 			CardSet.by_id(game_id, set_id, card_id),
@@ -455,6 +457,7 @@ class Set:
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_name(game, name):
 		assert(isinstance(game, Game))
 
@@ -481,6 +484,7 @@ class Set:
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_id(game, set_id):
 		for g in fetch(f'{game.category_id}/groups'):
 			if str(g['groupId']) == str(set_id):
@@ -489,6 +493,7 @@ class Set:
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_abbr(game, abbr):
 		for g in fetch(f'{game.category_id}/groups'):
 			if g['abbreviation'].lower() == abbr.lower():
@@ -523,6 +528,10 @@ class Set:
 		return f'{self.name} ({self.abbreviation})'
 
 
+	def __hash__(self):
+		return ll.md5_int(self.game.name + self.name)
+
+
 class Game:
 	def __init__(self, json, query=None):
 		self.json = json
@@ -531,10 +540,12 @@ class Game:
 		for k, v in self.json.items():
 			setattr(self, ll.uncamel(k), v)
 
-		self.sets = {}
+		self._sets = {}
+		self._loaded = False
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_name(query):
 		query = norm(query)
 
@@ -562,6 +573,7 @@ class Game:
 
 
 	@staticmethod
+	@ll.cache(stale=ll.days(1))
 	def by_id(game_id):
 		cats = fetch(f'categories')
 		for c in cats:
@@ -573,18 +585,39 @@ class Game:
 	def set(self, name):
 		# Try abbr first
 		name = norm(name)
-		if name not in self.sets:
+		if name not in self._sets:
 			def _lkup(nm):
 				try:
 					return Set.by_abbr(self, nm)
 				except:
 					return Set.by_name(self, nm)
 			s = _lkup(name)
-			self.sets[name] = s
-			self.sets[s.name] = s
-			self.sets[s.abbreviation] = s
+			self._sets[name] = s
+			self._sets[s.name] = s
+			self._sets[s.abbreviation] = s
 
-		return self.sets[name]
+		return self._sets[name]
+
+
+	@property
+	def sets(self):
+		if not self._loaded:
+			gs = ll.json(ll.read(f'data/groups/{self.category_id}.json'))
+			for s in ll.track(gs):
+				ss = Set.by_id(self, s['groupId'])
+				if ss.name in self._sets:
+					continue
+				self._sets[ss.name] = ss
+				self._sets[ss.abbreviation] = ss
+			self._loaded = True
+
+		seen = set()
+		ret = []
+		for k, v in self._sets.items():
+			if v.group_id not in seen:
+				seen.add(v.group_id)
+				ret.append(v)
+		return ret
 
 
 	'''
@@ -604,4 +637,8 @@ class Game:
 
 	def cards(self, nabbr, num, filter=''):
 		return self.set(nabbr).cards(num, filter=filter, limit=limit)
+
+
+	def __hash__(self):
+		return ll.md5_int(self.name)
 

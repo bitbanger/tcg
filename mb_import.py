@@ -7,9 +7,39 @@ from model import Game, Set, CardSet
 # Become Anonymous,ACR,Assassin's Creed,14,normal,uncommon,1,95532,long,0.12,false,false,near_mint,en,USD
 
 def main():
+	scry2tcg = {}
+	sfn = 'data/scryfall.json'
+	buf = []
+	for l in ll.track(ll.lines(sfn, stream=True), total=ll.wc_l(sfn)):
+		buf.append(l)
+	for r in ll.track(ll.json('\n'.join(buf))):
+		if 'tcgplayer_id' in r:
+			scry2tcg[r['id']] = r['tcgplayer_id']
+
+	total = 0
+	bad = 0
+	for row in ll.track(ll.csv('mtg.csv', stream=True), total=ll.wc_l('mtg.csv')-1):
+		total += 1
+		scry_id = row['Scryfall ID']
+		if scry_id not in scry2tcg:
+			print(row)
+			bad += 1
+		continue
+	print(f'{bad}/{total}')
+
+	'''
+	mtg = Game.by_name('magic')
+	tcg2prod = {}
+	for g in ll.track(ll.json(ll.read('data/groups/1.json'))):
+		s = Set.by_id(mtg, g['groupId'])
+		for c in s.all_cards:
+			tcg2prod[c.product_id] = c
+	'''
+
+	'''
 	mtg = Game.by_name('magic')
 	sc2set = {}
-	for row in ll.csv('ManaBox_Collection.csv'):
+	for row in ll.csv('mtg.csv'):
 		sc = row['Set code']
 		if sc == 'PLST':
 			sc = 'LIST' # :/
@@ -34,6 +64,7 @@ def main():
 		quit()
 
 	pass
+	'''
 
 if __name__ == '__main__':
 	main()
