@@ -562,7 +562,7 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,24541,675961,Holofoil,Pokemon,ME: Ascended Heroes,149,Togedemaru ex,Holofoil,Double Rare,0.74,2026-03-28 00:01:14,en,,38.69,31.0,12.3
 3,24541,676045,Holofoil,Pokemon,ME: Ascended Heroes,233,Misdreavus,Holofoil,Illustration Rare,6.37,2026-03-28 00:01:14,en,,62.0,50.0,20.97
 85,24499,665725,Holofoil,Pokemon Japan,M2a: High Class Pack: MEGA Dream ex,54,Tapu Koko,Holofoil,Common,0.35,2026-03-28 00:01:23,jp,,,,
-3,24451,fake_id_2,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,0.00,,en,,,,
+3,24451,685510,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,10.10,,en,,,,
 3,24541,675879,Holofoil,Pokemon,ME: Ascended Heroes,67,Tapu Koko,Holofoil,Rare,0.09,2026-03-28 00:01:14,en,,33.0,26.0,10.79
 3,24541,675932,Holofoil,Pokemon,ME: Ascended Heroes,120,Coalossal,Holofoil,Rare,0.08,2026-03-28 00:01:14,en,,30.49,24.0,10.13
 3,24541,675932,Holofoil,Pokemon,ME: Ascended Heroes,120,Coalossal,Holofoil,Rare,0.08,2026-03-28 00:01:14,en,,30.49,24.0,10.13
@@ -593,7 +593,7 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,24541,676052,Holofoil,Pokemon,ME: Ascended Heroes,240,Hitmontop,Holofoil,Illustration Rare,6.87,2026-03-28 00:01:14,en,,74.83,60.0,21.88
 3,24541,676050,Holofoil,Pokemon,ME: Ascended Heroes,238,Team Rocket's Mimikyu,Holofoil,Illustration Rare,31.12,2026-03-28 00:01:14,en,,275.96,221.0,41.0
 3,24541,676104,Holofoil,Pokemon,ME: Ascended Heroes,292,Iris's Fighting Spirit,Holofoil,Special Illustration Rare,40.5,2026-03-28 00:01:14,en,,220.78,177.0,36.0
-3,24451,fake_id_1,Holofoil,Pokemon,ME: Mega Evolution Promo,33,Mega Lucario ex,Holofoil,Promo,0.00,,en,,,,
+3,24451,685511,Holofoil,Pokemon,ME: Mega Evolution Promo,33,Mega Lucario ex,Holofoil,Promo,18.31,,en,,,,
 3,24541,675836,Holofoil,Pokemon,ME: Ascended Heroes,24,Ethan's Magcargo,Holofoil,Rare,0.08,2026-03-28 00:01:14,en,,30.39,24.0,10.1
 3,24541,675836,Holofoil,Pokemon,ME: Ascended Heroes,24,Ethan's Magcargo,Holofoil,Rare,0.08,2026-03-28 00:01:14,en,,30.39,24.0,10.1
 3,24541,675953,Holofoil,Pokemon,ME: Ascended Heroes,141,Hoopa,Holofoil,Rare,0.13,2026-03-28 00:01:14,en,,30.69,25.0,10.18
@@ -660,7 +660,7 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,24541,676065,Holofoil,Pokemon,ME: Ascended Heroes,253,Mega Audino ex,Holofoil,Ultra Rare,2.48,2026-03-28 00:01:14,en,,63.0,10.75,15.68
 3,24541,676052,Holofoil,Pokemon,ME: Ascended Heroes,240,Hitmontop,Holofoil,Illustration Rare,6.87,2026-03-28 00:01:14,en,,74.83,60.0,21.88
 3,24541,676103,Holofoil,Pokemon,ME: Ascended Heroes,291,Canari,Holofoil,Special Illustration Rare,46.08,2026-03-28 00:01:14,en,,234.69,188.0,57.13
-3,24451,fake_id_0,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,0.00,,en,,,,
+3,24451,685510,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,10.10,,en,,,,
 3,24541,676046,Holofoil,Pokemon,ME: Ascended Heroes,234,Banette,Holofoil,Illustration Rare,11.39,2026-03-28 00:01:14,en,,185.0,148.0,21.0
 3,24541,676046,Holofoil,Pokemon,ME: Ascended Heroes,234,Banette,Holofoil,Illustration Rare,11.39,2026-03-28 00:01:14,en,,185.0,148.0,21.0
 3,24541,676018,Reverse Holofoil,Pokemon,ME: Ascended Heroes,206,Team Rocket's Hypnotizer,Reverse Holofoil,Uncommon,0.28,2026-03-28 00:01:14,en,,31.62,25.0,10.43
