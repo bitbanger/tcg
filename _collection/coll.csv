@@ -562,7 +562,7 @@ tcg_category_id,tcg_group_id,tcg_product_id,tcg_subtype,game,set,number,name,var
 3,24541,675961,Holofoil,Pokemon,ME: Ascended Heroes,149,Togedemaru ex,Holofoil,Double Rare,0.74,2026-03-28 00:01:14,en,,38.69,31.0,12.3
 3,24541,676045,Holofoil,Pokemon,ME: Ascended Heroes,233,Misdreavus,Holofoil,Illustration Rare,6.37,2026-03-28 00:01:14,en,,62.0,50.0,20.97
 85,24499,665725,Holofoil,Pokemon Japan,M2a: High Class Pack: MEGA Dream ex,54,Tapu Koko,Holofoil,Common,0.35,2026-03-28 00:01:23,jp,,,,
-3,24451,fake_id_0,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,0.00,,en,,,,
+3,24451,fake_id_2,Holofoil,Pokemon,ME: Mega Evolution Promo,32,Mega Gardevoir ex,Holofoil,Promo,0.00,,en,,,,
 3,24541,675879,Holofoil,Pokemon,ME: Ascended Heroes,67,Tapu Koko,Holofoil,Rare,0.09,2026-03-28 00:01:14,en,,33.0,26.0,10.79
 3,24541,675932,Holofoil,Pokemon,ME: Ascended Heroes,120,Coalossal,Holofoil,Rare,0.08,2026-03-28 00:01:14,en,,30.49,24.0,10.13
 3,24541,675932,Holofoil,Pokemon,ME: Ascended Heroes,120,Coalossal,Holofoil,Rare,0.08,2026-03-28 00:01:14,en,,30.49,24.0,10.13
