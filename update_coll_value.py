@@ -1,24 +1,30 @@
 import ll
 import sys
 
+from argparse import ArgumentParser
 from collection import parse_row
 from model import CardSet
 
 
 def main():
+	ap = ArgumentParser()
+	ap.add_argument('-g', '--graded', action='store_true')
+	args = ap.parse_args()
+
 	# Parse CSV
 	coll_path = '_collection/coll.csv'
 	rows = ll.csv(coll_path)
 
-	for row in rows:
+	for row in ll.track(rows):
 		try:
 			card, _, subtype = parse_row(row)
 		except:
 			continue
 
-		row['psa_10'] = card.graded_price(grade='manual-only-price') or ''
-		row['cgc_10'] = card.graded_price(grade='condition-17-price') or ''
-		row['grade_9'] = card.graded_price(grade='graded-price') or ''
+		if args.graded:
+			row['psa_10'] = card.graded_price(grade='manual-only-price') or ''
+			row['cgc_10'] = card.graded_price(grade='condition-17-price') or ''
+			row['grade_9'] = card.graded_price(grade='graded-price') or ''
 
 		# Update row
 		match row['condition']:
